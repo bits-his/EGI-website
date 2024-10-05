@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap");
+
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  height: 95vh;
+  background-image: url("../../Assets/photoslider1.jpg");
+  flex-direction: column;
+}
+.home::before {
+  background-image: linear-gradient(155deg, #143525b0 25%, #143525 100%);
+  content: "";
+  position: absolute;
+}
+.home-text h3 {
+  font-size: 3.2em;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.home-text h3 span {
+  color: var(--main-color);
+}
+.homepage-text p {
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  max-width: 80%;
+  @media screen and (max-width: 570px) {
+    font-size: 13px;
+  }
+}
+* {
+  padding: 0px;
+  margin: 0px;
+}
+.main-container {
+  margin: 0px;
+  padding: 0px;
+  background-color: black;
+  min-height: 100vh;
+  position: relative;
+  margin-top: -90px;
+  padding-top: 60px;
+}
+.blur-circle1 {
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(to bottom, white, pink);
+  border-radius: 50%;
+  filter: blur(120px);
+  position: absolute;
+  left: 8%;
+  top: 50%;
+  /* transform: translate(50%); */
+}
+.blur-circle2 {
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(to bottom, white, pink);
+  border-radius: 50%;
+  filter: blur(100px);
+  position: absolute;
+  right: 10%;
+  top: 20%;
+  /* transform: translate(50%); */
+}
+body {
+  font-family: "Open Sans", sans-serif;
+}
+.containered {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Small */
+@media (min-width: 768px) {
+  .containered {
+    width: 750px;
+  }
+  .landing-page .content .info h1 {
+    font-size: 2em;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .containered {
+    width: 970px;
+  }
+  .landing-page .content .info h1 {
+    font-size: 2em;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .containered {
+    width: 1170px;
+  }
+}
+/* End Global Rules */
+
+.landing-page .content .containered {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 140px;
+  min-height: calc(100vh - 80px);
+}
+@media (max-width: 767px) {
+  .landing-page .content .containered {
+    gap: 0;
+    min-height: calc(100vh - 101px);
+    justify-content: center;
+    flex-direction: column-reverse;
+  }
+  .landing-page .content .info {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  .landing-page .content .info h1 {
+    color: #bbbbbb;
+    font-size: 3.5em;
+    font-weight: 600;
+  }
+}
+
+.landing-page .content .info h1 {
+  color: #bbbbbb;
+  font-size: 4em;
+  font-weight: 600;
+}
+.landing-page .content .info p {
+  margin: 0;
+  line-height: 1.6;
+  font-size: 1.4em;
+  color: #b3b3b3;
+}
+.landing-page .content .info button {
+  border: 0;
+  border-radius: 20px;
+  padding: 12px 30px;
+  margin-top: 30px;
+  cursor: pointer;
+  color: var(--text-color);
+  background-color: #6c63ff;
+}
+.landing-page .content .image img {
+  max-width: 100%;
+}
+/* End Landing Page */
+
+.main-image {
+  /* mix-blend-mode:exclusion */
+  width: 600px;
+  height: 400px;
+}
+h1,
+p {
+  color: var(--text-color);
+}
+/* ==============================================OFFER===================================================== */
+.offer h3 {
+  font-size: 33px;
+  font-weight: 600;
+  color: var(--background-color);
+  font-family: dosis;
+  /* text-align: center; */
+}
+.offer p {
+  font-size: 23px;
+  font-weight: 500;
+  color: var(--background-color);
+  font-family: "Figtree", sans-serif;
+  max-width: 90%;
+  opacity: 0.9;
+}
+.offer-icon-section {
+  display: flex;
+  gap: 20px;
+  width: 50%;
+  margin-bottom: 20px;
+}
+.offer-icon-section .offer-icon {
+  border-radius: 50%;
+  background-color: var(--highlight-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 100%;
+}
+
+.offer-icon-section .offer-icon svg {
+  color: var(--text-color);
+  font-size: 50px;
+}
+.offer-icon-section .offer-icon-desc {
+  align-content: center;
+  width: 60%;
+}
+.offer-icon-section .offer-icon-desc p {
+  font-family: dosis;
+  font-size: 20px;
+  opacity: 0.8;
+  color: var(--link-color);
+  line-height: 1.2;
+  font-family: "Figtree", sans-serif;
+}
+
+.offer-icon-section .offer-icon-desc h2 {
+  font-family: dosis;
+  font-size: 30px;
+  font-weight: 600;
+  opacity: 0.9;
+  color: var(--link-color);
+  line-height: 1.2;
+  /* margin-top: 18px; */
+}
+.offer-side {
+  background-color: #f9f9f988;
+}

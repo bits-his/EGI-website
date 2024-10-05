@@ -1,0 +1,416 @@
+.isSticky {
+  background-color: var(--background-color);
+  display: flex;
+  align-items: center;
+  height: 90px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+/* .whitelink li a {
+  color: var(--text-color) !important;
+}
+.whitelink li a:hover {
+  color: var(--link-hover-color) !important;
+}
+.whitelink li .active {
+  color: var(--link-hover-color) !important;
+} */
+
+.header-main {
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  height: 90px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.menu-block {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style-type: none;
+  padding: 0;
+}
+
+#courses,
+#blog,
+.drop {
+  font-weight: 600;
+  font-size: 16px;
+  /* color: var(--link-color); */
+  /* padding-inline: 12px; */
+}
+#courses::after,
+#blog::after {
+  margin-bottom: -2px;
+}
+
+.header-logo {
+  width: 20%;
+  & a {
+    text-decoration: none !important;
+  }
+  & .inner {
+    position: absolute;
+    top: 10px;
+    left: 85px;
+    display: flex;
+    font-size: 35px;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+    & h4 {
+      margin-left: 12px;
+      color: var(--highlight-color);
+      font-size: 1.1em;
+    }
+  }
+  & :is(img) {
+    height: 80px;
+    display: block;
+  }
+}
+.nav-links {
+  width: 80%;
+  padding-left: 0px;
+  justify-content: space-evenly;
+  display: flex;
+  & ul {
+    margin: 0;
+    padding: 0;
+  }
+  & .navigation {
+    display: flex;
+    width: 80%;
+    align-items: center;
+    justify-content: space-around;
+
+    & li {
+      & a {
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 18px;
+        color: var(--text-color);
+      }
+      a:hover {
+        color: var(--link-hover-color);
+      }
+      .active {
+        color: var(--link-hover-color);
+      }
+    }
+  }
+}
+.register {
+  position: relative;
+  padding: 10px 22px;
+  border-radius: 6px;
+  border: none;
+  color: var(--link-color);
+  cursor: pointer;
+  background-color: var(--link-hover-color);
+  transition: all 0.2s ease;
+}
+
+.register:active {
+  transform: scale(0.96);
+}
+
+.register:before,
+.register:after {
+  position: absolute;
+  content: "";
+  width: 150%;
+  left: 50%;
+  height: 100%;
+  transform: translateX(-50%);
+  z-index: -1000;
+  background-repeat: no-repeat;
+}
+
+.register:hover:before {
+  top: -70%;
+  background-image: radial-gradient(
+      circle,
+      var(--link-hover-color) 20%,
+      transparent 20%
+    ),
+    radial-gradient(
+      circle,
+      transparent 20%,
+      var(--link-hover-color) 20%,
+      transparent 30%
+    ),
+    radial-gradient(circle, var(--link-hover-color) 20%, transparent 20%),
+    radial-gradient(circle, var(--link-hover-color) 20%, transparent 20%),
+    radial-gradient(
+      circle,
+      transparent 10%,
+      var(--link-hover-color) 15%,
+      transparent 20%
+    ),
+    radial-gradient(circle, var(--link-hover-color) 20%, transparent 20%),
+    radial-gradient(circle, var(--link-hover-color) 20%, transparent 20%),
+    radial-gradient(circle, var(--link-hover-color) 20%, transparent 20%),
+    radial-gradient(circle, var(--link-hover-color) 20%, transparent 20%);
+  background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%,
+    10% 10%, 18% 18%;
+  background-position: 50% 120%;
+  animation: greentopBubbles 0.6s ease;
+}
+
+@keyframes greentopBubbles {
+  0% {
+    background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%,
+      40% 90%, 55% 90%, 70% 90%;
+  }
+
+  50% {
+    background-position: 0% 80%, 0% 20%, 10% 40%, 20% 0%, 30% 30%, 22% 50%,
+      50% 50%, 65% 20%, 90% 30%;
+  }
+
+  100% {
+    background-position: 0% 70%, 0% 10%, 10% 30%, 20% -10%, 30% 20%, 22% 40%,
+      50% 40%, 65% 10%, 90% 20%;
+    background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+  }
+}
+
+.register:hover::after {
+  bottom: -70%;
+  background-image: radial-gradient(
+      circle,
+      var(--link-hover-color) 20%,
+      transparent 20%
+    ),
+    radial-gradient(circle, var(--link-hover-color) 20%, transparent 20%),
+    radial-gradient(
+      circle,
+      transparent 10%,
+      var(--link-hover-color) 15%,
+      transparent 20%
+    ),
+    radial-gradient(circle, var(--link-hover-color) 20%, transparent 20%),
+    radial-gradient(circle, var(--link-hover-color) 20%, transparent 20%),
+    radial-gradient(circle, var(--link-hover-color) 20%, transparent 20%),
+    radial-gradient(circle, var(--link-hover-color) 20%, transparent 20%);
+  background-size: 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 20% 20%, 18% 18%;
+  background-position: 50% 0%;
+  animation: greenbottomBubbles 0.6s ease;
+}
+
+@keyframes greenbottomBubbles {
+  0% {
+    background-position: 10% -10%, 30% 10%, 55% -10%, 70% -10%, 85% -10%,
+      70% -10%, 70% 0%;
+  }
+
+  50% {
+    background-position: 0% 80%, 20% 80%, 45% 60%, 60% 100%, 75% 70%, 95% 60%,
+      105% 0%;
+  }
+
+  100% {
+    background-position: 0% 90%, 20% 90%, 45% 70%, 60% 110%, 75% 80%, 95% 70%,
+      110% 10%;
+    background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+  }
+}
+
+.hamburger {
+  place-content: center;
+  display: none;
+  & :is(button) {
+    padding: 0 6px 3px;
+    border: #dedede;
+    border-radius: 10px;
+    font-size: 28px;
+  }
+}
+div.dropdown-item {
+  padding-inline: 10px;
+  & :is(a) {
+    display: inline-block !important;
+  }
+}
+
+@media (width < 992px) {
+  .header-contact-info {
+    width: 75%;
+  }
+  .main-nav {
+    justify-content: space-between;
+  }
+  .nav-links {
+    width: 55% !important;
+    padding-left: 0;
+    & .social {
+      width: 55%;
+    }
+    & .navigation {
+      display: none;
+    }
+    & .navigation.open {
+      display: flex;
+      z-index: 10;
+      gap: 5px;
+      background-color: var(--link-color);
+      box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.5);
+      flex-direction: column;
+      width: 50%;
+      position: absolute;
+      right: 0%;
+      top: 90px;
+      transition: all 1s;
+      & li,
+      .dropdown {
+        height: 40px;
+        place-content: center;
+      }
+    }
+  }
+  .header-logo {
+    & .inner {
+      left: 60px;
+    }
+  }
+  .login {
+    font-size: 14px;
+    margin: 10px 0 50px 0;
+  }
+
+  .hamburger {
+    display: block;
+    margin-right: 10px;
+    margin-block: 5px;
+    & :is(button) {
+      font-size: 20px;
+    }
+  }
+}
+@media (width < 1150px) {
+  #service,
+  #media {
+    padding-inline: 10px;
+    font-size: 15px;
+  }
+  .header-main {
+    height: 90px;
+  }
+
+  .nav-links {
+    width: 80%;
+    & .navigation {
+      & li,
+      div {
+        & a {
+          padding-inline: 6px !important;
+          font-size: 16px !important;
+        }
+      }
+    }
+  }
+}
+@media (width < 768px) {
+  .hamburger {
+    margin-right: 10px;
+    margin-block: 5px;
+    & :is(button) {
+      font-size: 20px;
+    }
+  }
+
+  .main-nav {
+    height: 100%;
+    justify-content: space-between;
+  }
+  .nav-links {
+    & .social {
+      display: none;
+    }
+    & .navigation.open {
+      top: 72px;
+      right: 0;
+      width: 70%;
+      padding-block: 10px;
+      & li {
+        width: 100%;
+      }
+      & a {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        display: inline-flex;
+        margin-inline: auto;
+      }
+    }
+    & .navigation {
+      display: none;
+    }
+  }
+  .header-contact-info {
+    width: 70%;
+    justify-content: center !important;
+    clip-path: polygon(1% 0%, 100% 0%, 100% 100%, 10% 100%);
+    padding-top: 0;
+    & li {
+      width: 75%;
+      display: inline-flex;
+      align-items: center;
+    }
+    & .info-text {
+      font-size: 11px;
+    }
+  }
+  .header-logo {
+    & .inner {
+      left: 70px;
+      top: 7px;
+    }
+    & :is(img) {
+      height: 55px;
+    }
+  }
+}
+@media (width < 542px) {
+  .header-logo {
+    width: 10%;
+    & a {
+      text-decoration: none !important;
+    }
+    & .inner {
+      left: 50px;
+
+      & h4 {
+        margin-left: 12px;
+        color: var(--highlight-color);
+        font-size: 1em;
+      }
+    }
+    & :is(img) {
+      height: 50px;
+      display: block;
+    }
+  }
+  .header-main {
+    height: 70px;
+  }
+  .isSticky {
+    height: 70px;
+  }
+}

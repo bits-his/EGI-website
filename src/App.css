@@ -1,0 +1,14 @@
+:root {
+  --main-color: #333;
+  --highlight-color: #ffc722;
+  --background-color: #222;
+  --text-color: #fff;
+  --link-color: #000;
+  --link-hover-color: #f7c51d;
+}
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: var(--link-color);
+}
