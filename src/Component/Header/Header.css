@@ -6,6 +6,8 @@
   position: sticky;
   top: 0;
   z-index: 100;
+  /* opacity: .9; */
+  filter: blur(100);
 }
 /* .whitelink li a {
   color: var(--text-color) !important;
@@ -18,7 +20,7 @@
 } */
 
 .header-main {
-  background-color: transparent;
+  background-color: black;
   display: flex;
   align-items: center;
   height: 90px;

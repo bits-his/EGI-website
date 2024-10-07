@@ -160,6 +160,14 @@ p {
   color: var(--text-color);
 }
 /* ==============================================OFFER===================================================== */
+.offer {
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ padding-inline: 40px;
+}
+
 .offer h3 {
   font-size: 33px;
   font-weight: 600;
@@ -174,11 +182,12 @@ p {
   font-family: "Figtree", sans-serif;
   max-width: 90%;
   opacity: 0.9;
+  text-align: justify;
 }
 .offer-icon-section {
   display: flex;
   gap: 20px;
-  width: 50%;
+  /* width: 50%; */
   margin-bottom: 20px;
 }
 .offer-icon-section .offer-icon {

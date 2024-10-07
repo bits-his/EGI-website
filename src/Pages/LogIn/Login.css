@@ -1,0 +1,37 @@
+.registration {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  background-color: #f0f8ff;
+  /* color: ; */
+}
+.registration .reg-card {
+  background-color: var(--text-color);
+  padding: 20px;
+  max-width: 50%;
+  border-radius: 20px;
+  outline: 3px solid rgba(128, 128, 128, 0.185);
+  font-weight: 700;
+  font-family: dosis;
+}
+.registration .reg-card h4 {
+  font-size: 30px;
+}
+.registration .reg-card p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: black;
+  opacity: 0.8;
+  font-weight: 600;
+}
+.registration .reg-card button {
+  border: 0;
+  border-radius: 20px;
+  padding: 12px 30px;
+  margin-top: 30px;
+  cursor: pointer;
+  color: var(--text-color);
+  background-color: var(--highlight-color);
+  font-size: 18px;
+}

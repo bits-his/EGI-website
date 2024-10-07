@@ -119,9 +119,11 @@ export default function Header() {
                 Contact
               </NavLink>
             </li>
-            <div className="login">
-              <button className="register">Register</button>
-            </div>
+            <Link to={"/register"}>
+              <div className="login">
+                <button className="register">Register</button>
+              </div>
+            </Link>
           </ul>
         </nav>
       </div>
