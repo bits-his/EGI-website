@@ -38,6 +38,10 @@ export default function AppNavigation() {
       path: "/register",
       element: <Register />,
     },
+    {
+      path: "*",
+      element: <Home />,
+    },
   ]);
   return routes;
 }

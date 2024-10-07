@@ -12,7 +12,7 @@ export default function HomeCourseCard({
   content,
 }) {
   return (
-    <div className="col-lg-4 col-md-6 col-sm-12 p-0 mb-4">
+    <div className="col-lg-3 col-md-6 col-sm-12 p-0 mb-4">
       <div className="course shadow">
         <div className="course-img mb-3">
           <img src={attechment} alt="blog1" />
@@ -21,7 +21,7 @@ export default function HomeCourseCard({
           <h3>{title}</h3>
           <p>{content}</p>
           <div className="d-flex justify-content-between my-2">
-            <div className="rate">
+            {/* <div className="rate">
               <div className="rating">
                 <FaStar />
 
@@ -36,10 +36,10 @@ export default function HomeCourseCard({
               <p>
                 <span>(4.5)</span> based on 120
               </p>
-            </div>
-            <div className="price">
+            </div> */}
+            {/* <div className="price">
               <span>₦135</span>
-            </div>
+            </div> */}
           </div>
           <button>Apply Now</button>
         </div>

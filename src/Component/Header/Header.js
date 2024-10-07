@@ -30,7 +30,7 @@ export default function Header() {
         <div className="header-logo">
           <Link to="/" className="inner" title="Logo">
             <img src={logo} alt="logo" />
-            <h4>EGI</h4>
+            <h4>Yazeed Academy</h4>
           </Link>
         </div>
         <nav className="nav-links">
@@ -43,87 +43,78 @@ export default function Header() {
               <NavLink to="/">Home</NavLink>
             </li>
             <li onClick={handleClick}>
-              <NavLink to="/about" title="About">
+              <NavLink to="/a" title="About">
                 About
               </NavLink>
             </li>
             <li>
-              <NavDropdown title="Courses" id="courses" as={"div"}>
+              <NavDropdown title="Program" id="courses" as={"div"}>
                 <NavDropdown.Item as={"div"}>
                   <a
                     href="#"
                     style={{ color: "var(--link-color)" }}
                     // target="_blank"
                   >
-                    Foundamental Principle of Agricbusiness
+                    Pre Nursery
                   </a>
                   <a
                     href="#"
                     style={{ color: "var(--link-color)" }}
                     // target="_blank"
                   >
-                    Farm Operations Management
+                    Nursery section
                   </a>
                   <a
                     href="#"
                     style={{ color: "var(--link-color)" }}
                     // target="_blank"
                   >
-                    Vegetable Farm Enterprises
+                    Primary section
                   </a>
                   <a
                     href="#"
                     style={{ color: "var(--link-color)" }}
                     // target="_blank"
                   >
-                    Livestock Farm Enterprises
-                  </a>
-                  <a
-                    href="#"
-                    style={{ color: "var(--link-color)" }}
-                    // target="_blank"
-                  >
-                    Farm Products Costing
-                  </a>
-                  <a
-                    href="#"
-                    style={{ color: "var(--link-color)" }}
-                    // target="_blank"
-                  >
-                    Farm Stock Management
+                    Secondary section
                   </a>
                 </NavDropdown.Item>
               </NavDropdown>
             </li>
             <li onClick={handleClick}>
-              <NavLink to="/event" title="Event">
+              <NavLink to="/e" title="Event">
                 Event
               </NavLink>
             </li>
 
             <li>
-              <NavDropdown title="Blog" id="blog" as={"div"}>
-                <NavDropdown.Item as={"div"} style={{ color: "black" }}>
-                  <NavLink
-                    to="/blogpost"
-                    title="Blog Post"
-                    style={{ color: "var(--link-color)" }}
-                  >
-                    Blog Post
-                  </NavLink>
-                </NavDropdown.Item>
-              </NavDropdown>
+              <NavLink to="/c" title="Blog">
+                Blog
+              </NavLink>
             </li>
             <li onClick={handleClick}>
-              <NavLink to="/contact" title="Contact">
+              <NavLink to="/c" title="Contact">
                 Contact
               </NavLink>
             </li>
-            <Link to={"/register"}>
-              <div className="login">
-                <button className="register">Register</button>
-              </div>
-            </Link>
+            <div className="d-flex justify-content-between">
+              <a
+                href="https://yazeed-academy-app.elscholar.ng/application-form"
+                target="_blank"
+              >
+                <div className="login">
+                  <button className="register">Application</button>
+                </div>
+              </a>
+              <a
+                href="https://yazeed-academy-app.elscholar.ng/login"
+                target="_blank"
+              >
+                <div className="login">
+                  <button className="register">Returning Student</button>
+                </div>
+              </a>
+            </div>
           </ul>
         </nav>
       </div>

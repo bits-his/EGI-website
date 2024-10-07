@@ -20,8 +20,9 @@ export default function Footer() {
               </div>
               <div className="footer-description">
                 <p>
-                  lorem ipsum dolor sit amet, consectetur adip incididunt ut
-                  labore et justo et justo od
+                  Yazeed Academy is dedicated to providing quality education and
+                  fostering holistic development in students, preparing them for
+                  future success
                 </p>
               </div>
               <div className="footer-contact">
@@ -32,7 +33,7 @@ export default function Footer() {
                     </span>
                     <span className="contact-text">
                       <a href="mailto:info@kirmas.kn.gov.ng" className="">
-                        info@school.ng
+                        info@yazeed.com
                       </a>
                     </span>
                   </li>
@@ -41,7 +42,7 @@ export default function Footer() {
                       <LiaPhoneVolumeSolid />
                     </span>
                     <span className="contact-text">
-                      <a href="tel: 07073333375">+2347099999333 </a>
+                      <a href="tel: 08037871418">+2348037871418 </a>
                     </span>
                   </li>
                   <li className="contact-item">
@@ -49,7 +50,7 @@ export default function Footer() {
                       <LiaPhoneVolumeSolid />
                     </span>
                     <span className="contact-text">
-                      <a href="tel: 07073333376">+2347033392833 </a>
+                      <a href="tel: 08065531596">+2348065531596 </a>
                     </span>
                   </li>
                 </ul>
@@ -62,19 +63,19 @@ export default function Footer() {
                 </div>
                 <ul className="links-list">
                   <li>
-                    <Link to="/about"> About Us</Link>
+                    <Link to="/"> About Us</Link>
                   </li>
                   <li>
-                    <Link to="//event">Event</Link>
+                    <Link to="/">Event</Link>
                   </li>
                   <li>
-                    <Link to="/newsletter">Blog </Link>
+                    <Link to="/">Blog </Link>
                   </li>
                   <li>
-                    <Link to="/news">Courses</Link>
+                    <Link to="/">Courses</Link>
                   </li>
                   <li>
-                    <Link to="/photos">Contact</Link>
+                    <Link to="/">Contact</Link>
                   </li>
                 </ul>
               </div>
@@ -82,19 +83,21 @@ export default function Footer() {
             <div className="col-6 col-sm-6 col-md-4 ps-sm-5 mb-5 col-lg-3 mt-xl-5 col-xl-2">
               <div className="footer-services">
                 <div className="footer-links-heading">
-                  <h2>Courses</h2>
+                  <h2>Programs</h2>
                 </div>
                 <ul className="service-list">
                   <li>
-                    <Link to="#">Foundamental Principle of Agricbusiness</Link>
+                    <Link to="#">Pre Nursery Section</Link>
                   </li>
                   <li>
-                    <Link to="#">Farm Operations Management</Link>
+                    <Link to="#">Nursery Section</Link>
                   </li>
                   <li>
-                    <Link to="#">Vegetable Farm Enterprises</Link>
+                    <Link to="#">Primary Section</Link>
                   </li>
-                  
+                  <li>
+                    <Link to="#">Secondary Section</Link>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -143,7 +146,7 @@ export default function Footer() {
                           Nigerian Contacts:
                           <br />
                           <IoLocationSharp />
-                          Plot 100, Fate Road Ilorin, Kwara state
+                          1264 Setlite Town, Tudun Yola, Kabuga Kano
                         </div>
                       </li>
                       <li>
@@ -151,7 +154,7 @@ export default function Footer() {
                           {/* Delhi
                           <br /> */}
                           <IoLocationSharp />
-                          Cadastral Area, Abuja, FCT
+                          Afforestation Road, Unguwar Jakada Dorayi Babba,Kano
                         </div>
                       </li>
                     </ul>
@@ -170,7 +173,7 @@ export default function Footer() {
                   <a href="#">Terms and Conditions</a>
                 </li>
                 <span>|</span>
-                <li className="legal-item">Copyright © {date} EGI</li>
+                <li className="legal-item">Copyright © {date} YAZEED</li>
               </ul>
               <div className="footer-copyright">
                 <h2>Developed by Brainstorm IT Solutions</h2>

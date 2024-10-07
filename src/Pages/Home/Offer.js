@@ -16,11 +16,13 @@ export default function Offer() {
             <div className="offer">
               {/* <h3>What we Offer</h3> */}
 
-              <p>
-                On her way she met a copy. The copy warned the Little Blind
-                Text, that where it came from it would have been rewritten a
-                thousand times and everything that was left from its origin
-                would be the word.
+              <p className="mb-4">
+                Yazeed Memorial School is dedicated to nurturing every child's
+                potential through quality primary and secondary education. Our
+                dedicated educators foster critical thinking and creativity
+                while instilling values like respect and integrity. With diverse
+                extracurricular activities, we prepare students for academic
+                success and equip them for life’s challenges.
               </p>
               <div className="row ps-md-5">
                 <div className="col-md-6 col-sm-12 offer-icon-section">
@@ -30,8 +32,8 @@ export default function Offer() {
                   <div className="offer-icon-desc">
                     <h2>Safety First</h2>
                     <p>
-                      Far far away, behind the word mountains, far from the
-                      countries Vokalia.
+                      Nestled in a secure haven, where learning thrives amidst
+                      care and vigilance.
                     </p>
                   </div>
                 </div>
@@ -42,8 +44,8 @@ export default function Offer() {
                   <div className="offer-icon-desc">
                     <h2>Regular Classes</h2>
                     <p>
-                      Far far away, behind the word mountains, far from the
-                      countries Vokalia.
+                      Structured learning sessions held consistently to enhance
+                      knowledge and skills.
                     </p>
                   </div>
                 </div>
@@ -52,10 +54,11 @@ export default function Offer() {
                     <GrCertificate />
                   </div>
                   <div className="offer-icon-desc">
-                    <h2>Certified Teachers</h2>
+                    <h2>Experienced Educators</h2>
                     <p>
-                      Far far away, behind the word mountains, far from the
-                      countries Vokalia.
+                      Skilled professionals committed to delivering quality
+                      education and nurturing student growth through engaging
+                      teaching methods.
                     </p>
                   </div>
                 </div>
@@ -66,8 +69,8 @@ export default function Offer() {
                   <div className="offer-icon-desc">
                     <h2>Creative Lessons</h2>
                     <p>
-                      Far far away, behind the word mountains, far from the
-                      countries Vokalia.
+                      Innovative and engaging lessons designed to inspire
+                      imagination and foster creativity.
                     </p>
                   </div>
                 </div>

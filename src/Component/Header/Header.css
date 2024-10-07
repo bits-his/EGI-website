@@ -78,7 +78,7 @@ li {
     & h4 {
       margin-left: 12px;
       color: var(--highlight-color);
-      font-size: 1.1em;
+      font-size: .8em;
     }
   }
   & :is(img) {
@@ -126,6 +126,7 @@ li {
   cursor: pointer;
   background-color: var(--link-hover-color);
   transition: all 0.2s ease;
+  margin-right: 10px;
 }
 
 .register:active {
@@ -310,6 +311,7 @@ div.dropdown-item {
   #media {
     padding-inline: 10px;
     font-size: 15px;
+    display: block;
   }
   .header-main {
     height: 90px;

@@ -13,25 +13,25 @@ export default function Certificate() {
           icon={<FaChalkboardTeacher />}
           style="certificate"
           heading="Certified Teachers"
-          description="Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic."
+          description="Certified teachers dedicated to fostering academic excellence and personal growth in every student"
         />
         <Certified
           icon={<AiOutlineRead />}
           style="certificate2"
           heading="Book & Library"
-          description="Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic."
+          description=" Cozy, Extensive library offering a curated selection of books designed to inspire curiosity, foster learning, and ignite imagination in students"
         />
         <Certified
           icon={<MdCastForEducation />}
-          heading="Special Education"
-          description="Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic"
+          heading="Learning Environment"
+          description="A supportive and stimulating learning environment designed to encourage creativity, critical thinking, and academic growth in every student"
           style="certificate"
         />
         <Certified
           icon={<PiStudentBold />}
           style="certificate2"
           heading="Certification"
-          description="Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic"
+          description="Recognized certification ensuring high educational standards and a commitment to excellence in teaching and student development"
         />
       </div>
     </div>
