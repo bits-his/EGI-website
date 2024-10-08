@@ -52,11 +52,13 @@ export default function PhotoSlider() {
           <div className="content">
             <div className="containered">
               <div className="info">
-                <h1>Yazeed <br /> Memorial Academy</h1>
+                <h1>
+                  Yazeed <br /> Memorial Academy
+                </h1>
                 <p>
-                  A certified institution providing high-quality primary and
-                  secondary education with a focus on academic excellence,
-                  character development, and holistic growth
+                  A certified institution offering quality primary and secondary
+                  education, focused on academic excellence, character
+                  development, and holistic growth
                 </p>
                 <button>Learn More</button>
               </div>

@@ -9,15 +9,7 @@
   /* opacity: .9; */
   filter: blur(100);
 }
-/* .whitelink li a {
-  color: var(--text-color) !important;
-}
-.whitelink li a:hover {
-  color: var(--link-hover-color) !important;
-}
-.whitelink li .active {
-  color: var(--link-hover-color) !important;
-} */
+
 
 .header-main {
   background-color: black;
@@ -51,8 +43,8 @@ li {
 #courses,
 #blog,
 .drop {
-  font-weight: 600;
-  font-size: 16px;
+  font-weight: 700;
+  font-size: 18px;
   /* color: var(--link-color); */
   /* padding-inline: 12px; */
 }
@@ -62,7 +54,7 @@ li {
 }
 
 .header-logo {
-  width: 20%;
+  width: 40%;
   & a {
     text-decoration: none !important;
   }
@@ -73,12 +65,14 @@ li {
     display: flex;
     font-size: 35px;
     font-weight: bold;
+     font-family: "Figtree", sans-serif;
     align-items: center;
     justify-content: center;
     & h4 {
       margin-left: 12px;
       color: var(--highlight-color);
       font-size: .8em;
+       font-family: "Figtree", sans-serif;
     }
   }
   & :is(img) {
@@ -87,7 +81,7 @@ li {
   }
 }
 .nav-links {
-  width: 80%;
+  width: 60%;
   padding-left: 0px;
   justify-content: space-evenly;
   display: flex;
@@ -107,6 +101,7 @@ li {
         font-weight: 700;
         font-size: 18px;
         color: var(--text-color);
+         font-family: "Figtree", sans-serif;
       }
       a:hover {
         color: var(--link-hover-color);

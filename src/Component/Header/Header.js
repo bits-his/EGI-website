@@ -30,7 +30,9 @@ export default function Header() {
         <div className="header-logo">
           <Link to="/" className="inner" title="Logo">
             <img src={logo} alt="logo" />
-            <h4>Yazeed Academy</h4>
+            <h4>
+              Yazeed <br /> Academy
+            </h4>
           </Link>
         </div>
         <nav className="nav-links">
