@@ -52,7 +52,7 @@ export default function PhotoSlider() {
           <div className="content">
             <div className="containered">
               <div className="info">
-                <h1>Enterprise Grooming Institute</h1>
+                <h1>Enterprise <br /> Grooming Institute</h1>
                 <p>
                   A Certified Enterprise Development and Bussiness Development
                   Service Provider

@@ -1,5 +1,5 @@
 import "./footer.css";
-import logo from "../../Assets/logo.png";
+import logo from "../../Assets/logo-removebg-preview.png";
 import { HiOutlineMailOpen } from "react-icons/hi";
 import { LiaPhoneVolumeSolid } from "react-icons/lia";
 import { Link } from "react-router-dom";

@@ -1,10 +1,10 @@
 :root {
   --main-color: #333;
-  --highlight-color: #ffc722;
+  --highlight-color: #23582C;
   --background-color: #222;
   --text-color: #fff;
   --link-color: #000;
-  --link-hover-color: #f7c51d;
+  --link-hover-color: #65A75E;
 }
 body {
   box-sizing: border-box;

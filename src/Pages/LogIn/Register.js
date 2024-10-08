@@ -16,20 +16,31 @@ import {
 } from "reactstrap";
 import { stateLga } from "../../Component/state_lga";
 import "./Login.css";
+import { _post } from "../../Helper";
 
 export default function Register() {
   const [form, setForm] = useState("");
   const [loading, setLoading] = useState(false);
   const [errors, setErrors] = useState({});
-  const [showDepartment,setshowDepartment] =useState(false)
-  const [showDepartmentInput, setshowDepartmentInput] = useState(false);
   const handleChange = ({ target: { name, value } }) => {
     setForm((p) => ({ ...p, [name]: value }));
   };
   const handleSubmit = (e) => {
     if (loading) return;
     e.preventDefault();
-    console.log(form)
+    _post(
+      "CREATE",
+      { ...form,  },
+      () => {
+        setLoading(false);
+        alert("submittion succes");
+      },
+      () => {
+        setLoading(false);
+        alert("submittion failed");
+      }
+    );
+    console.log(form);
 
     // const newErrors = validateForm(form);
     // setErrors(newErrors);
@@ -231,7 +242,9 @@ export default function Register() {
                         name="application_type"
                         type="select"
                         className="app_input"
+                        value={form.application_type}
                       >
+                        <option value={""}>---select-----</option>
                         <option value={"schOfWealthCreation"}>
                           School of wealth creation
                         </option>
@@ -241,9 +254,56 @@ export default function Register() {
                       </Input>
                     </FormGroup>
                   </Col>
-                  <Col md={12}>
+                  {/* {JSON.stringify(form.application_type)} */}
+                  {form.application_type === "schOfWealthCreation" ? (
+                    <Col md={12}>
+                      <FormGroup>
+                        <Label for="lga">Department</Label>
+                        <Input
+                          onChange={handleChange}
+                          id="department"
+                          name="department"
+                          type="select"
+                          className="app_input"
+                          value={form.department}
+                        >
+                          <option>
+                            Department of waste to wealth management
+                          </option>
+                          <option>Department of Soft skill management</option>
+                          <option>Department of Enterprise Development</option>
+                          <option>Department of Executive programmes</option>
+                          <option>Department of Media and publication</option>
+                        </Input>
+                      </FormGroup>
+                    </Col>
+                  ) : null}
+                  {form.application_type ===
+                  "schOfFarmOperationalManagement" ? (
+                    <Col md={12}>
+                      <FormGroup>
+                        <Label for="lga">Department</Label>
+                        <Input
+                          onChange={handleChange}
+                          id="department"
+                          name="department"
+                          type="select"
+                          className="app_input"
+                          value={form.department}
+                        >
+                          <option>
+                            Department of livestock farm operation
+                          </option>
+                          <option>
+                            Department of Arable and Vegetable Farm Operation
+                          </option>
+                        </Input>
+                      </FormGroup>
+                    </Col>
+                  ) : null}
+                  {/* <Col md={12}>
                     <FormGroup>
-                      <Label for="lga">School of wealth creation</Label>
+                      <Label for="lga">Department</Label>
                       <Input
                         onChange={handleChange}
                         id="department"
@@ -268,28 +328,8 @@ export default function Register() {
                         </option>
                       </Input>
                     </FormGroup>
-                  </Col>
-                  <Col md={12}>
-                    <FormGroup>
-                      <Label for="lga">
-                        School of Farm operational management
-                      </Label>
-                      <Input
-                        onChange={handleChange}
-                        id="department"
-                        name="department"
-                        type="select"
-                        className="app_input"
-                      >
-                        <option value={"dptOfWasteToWealthManaagement"}>
-                          Department of livestock farm operation
-                        </option>
-                        <option value={"dptOfSoftSkillManagement"}>
-                          Department of Arable and Vegetable Farm Operation
-                        </option>
-                      </Input>
-                    </FormGroup>
-                  </Col>
+                  </Col> */}
+
                   <Col md={12}>
                     <FormGroup>
                       <Label for="address">Contact address</Label>
@@ -309,6 +349,7 @@ export default function Register() {
                       name="dob"
                       onChange={handleChange}
                       type="date"
+                      value={form.dob}
                     />
                   </FormGroup>
                   <Col md={6}>
@@ -320,6 +361,7 @@ export default function Register() {
                         name="state"
                         type="select"
                         className="app_input"
+                        value={form.state}
                       >
                         <option value={""}>Select State</option>
                         {stateLga.map((item) => (
@@ -337,6 +379,7 @@ export default function Register() {
                         name="lga"
                         type="select"
                         className="app_input"
+                        value={form.lga}
                       >
                         <option value={""}>--Select LGA--</option>
                         {stateLga
@@ -352,13 +395,13 @@ export default function Register() {
                       <Label for="lga">Programme type</Label>
                       <Input
                         onChange={handleChange}
-                        id="programType"
-                        name="programType"
+                        id="program_type"
+                        name="program_type"
                         type="select"
                         className="app_input"
                       >
-                        <option value={"physicalClass"}>Physical Class</option>
-                        <option value={"onlineClass"}>Online Class</option>
+                        <option>Physical Class</option>
+                        <option>Online Class</option>
                       </Input>
                     </FormGroup>
                   </Col>
@@ -372,9 +415,10 @@ export default function Register() {
                         name="gender"
                         type="select"
                         className="app_input"
+                        value={form.gender}
                       >
-                        <option value={"male"}>Yes</option>
-                        <option value={"female"}>Female</option>
+                        <option>Male</option>
+                        <option>Female</option>
                       </Input>
                     </FormGroup>
                   </Col>
@@ -385,13 +429,14 @@ export default function Register() {
                       </Label>
                       <Input
                         onChange={handleChange}
-                        id="paidprogram"
-                        name="paidprogram"
+                        id="payment_status"
+                        name="payment_status"
                         type="select"
                         className="app_input"
+                        value={form.payment_status}
                       >
-                        <option value={"yes"}>Yes</option>
-                        <option value={"no"}>No</option>
+                        <option>Paid</option>
+                        <option>Unpaid</option>
                       </Input>
                       <FormText>
                         Ecobank Plc Enterprise Grooming Institute Account Number
@@ -404,6 +449,7 @@ export default function Register() {
                 <div className="d-flex justify-content-center">
                   <button
                     onClick={handleSubmit}
+                    disabled={loading}
                     style={{
                       width: 150,
                       padding: 10,
@@ -412,7 +458,7 @@ export default function Register() {
                       borderRadius: 7,
                     }}
                   >
-                    Submit
+                    {loading ? "Submitting" : "Submit"}
                   </button>
                 </div>
               </Form>

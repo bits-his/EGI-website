@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./Header.css";
 import { Link } from "react-router-dom";
-import logo from "../../Assets/logo.png";
+import logo from "../../Assets/logo-removebg-preview.png";
 import { BiX } from "react-icons/bi";
 import { IoMenu } from "react-icons/io5";
 import { NavLink } from "react-router-dom";
@@ -30,7 +30,7 @@ export default function Header() {
         <div className="header-logo">
           <Link to="/" className="inner" title="Logo">
             <img src={logo} alt="logo" />
-            <h4>EGI</h4>
+            {/* <h4>EGI</h4> */}
           </Link>
         </div>
         <nav className="nav-links">
