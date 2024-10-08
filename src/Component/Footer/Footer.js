@@ -176,7 +176,9 @@ export default function Footer() {
                 <li className="legal-item">Copyright © {date} YAZEED</li>
               </ul>
               <div className="footer-copyright">
-                <h2>Developed by Brainstorm IT Solutions</h2>
+                <a href="http://elscholar.ng" className="text-light text-decoration-none">
+                  <h2>Powered by Elite Academic Tech</h2>
+                </a>
               </div>
             </div>
           </div>

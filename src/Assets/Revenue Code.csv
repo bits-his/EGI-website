@@ -1,0 +1,46 @@
+economic_code,title,sector
+12010106,Paye Org. Private Sector,TAX
+12010101,Paye State,TAX
+12010105,Paye Federal Govt. Establishments,TAX
+12010104,Paye Local Govts,TAX
+12010107,Paye Informal Sector,TAX
+12010112,Back Duty Assessment,TAX
+12010104,Direct Assessment,TAX
+12010501,Direct Assessment on High Networth,TAX
+12010502,Direct Assessment on Mix-Income,TAX
+12010503,Direct Assessment on Expatriates,TAX
+12010111,Direct Assessment on Informal/Presumptive,TAX
+12010302,Withholding Tax on Dividend ,TAX
+12010303,Withholding Tax on Rent ,TAX
+12010304,Withholding Tax on Bank Interest ,TAX
+12010305,Withholding Tax on Directors Fees ,TAX
+12010306,Withholding Tax on Contracts ,TAX
+12010307,Withholding Tax on Professional fees,TAX
+12010308,Withholding Tax,TAX
+12010311,Withholding tax on Consultancy,TAX
+2010301,Capital Gains Tax (Individual) - General,TAX
+12010301,"Sale of Physical Assets (Land, Building, Plant, Machinery & Equipment)",TAX
+12010301,Sale of Technical Knowhow (Technology Process or Design ),TAX
+12010301,"Sale of Intellectual Property (Copy Right, Trade Marks & Patents)",TAX
+12010602,"Stamp Duties on Instruments executed by individuals,",TAX
+12010603,Development Levy,TAX
+12010314,Entertainment Tax,TAX
+12010322,Social Services and Economic Levy,TAX
+12010318,Excess Charges / Interest Recovery,TAX
+12010313,Consumption Tax,TAX
+12010316,Presumptive tax,TAX
+NULL,KIRS (Non-Tax Revenue),NON TAX
+12020444,Container/Haulage Discharge Fees,NON TAX
+12020445,Specialised Vehicle Parking Fees,NON TAX
+12020440,Parking Permit,NON TAX
+12020450,Agricultural Product/Produced Sales Fees,NON TAX
+12020446,Sand Dredging,NON TAX
+12020451,Animal Trade Levy,NON TAX
+12020449,Mobile Advert,NON TAX
+12010309,Withholding Tax On Royalties,TAX
+12010310,Withholding Tax on Management Fees,TAX
+12010319,Stamp Duties,TAX
+12010323,Other Direct Taxes,TAX
+12020143,Other Licenses,NON TAX
+12010111,Direct Assessment on Informal/Presumptive,TAX
+12010343,Other Taxes,TAX
