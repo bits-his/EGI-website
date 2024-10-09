@@ -29,8 +29,7 @@ export default function Register() {
     if (loading) return;
     e.preventDefault();
     _post(
-      "CREATE",
-      { ...form,  },
+      { ...form },
       () => {
         setLoading(false);
         alert("submittion succes");

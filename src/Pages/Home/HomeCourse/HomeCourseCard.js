@@ -38,7 +38,7 @@ export default function HomeCourseCard({
               </p>
             </div>
             <div className="price">
-              <span>₦135</span>
+              {/* <span>₦135</span> */}
             </div>
           </div>
           <button>Apply Now</button>

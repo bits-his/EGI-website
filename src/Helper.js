@@ -1,9 +1,10 @@
-  import { useLocation } from "react-router-dom";
-  export const server_url = "https://server.brainstorm.ng/egi-scholar/registration";
+import { useLocation } from "react-router-dom";
+export const server_url =
+  "https://server.brainstorm.ng/egi-scholar/registration";
 
-export const _post = (url, data, success = (f) => f, error = (f) => f) => {
+export const _post = (data, success = (f) => f, error = (f) => f) => {
   const token = localStorage.getItem("@@token");
-  fetch(`${server_url}/${url}`, {
+  fetch(`${server_url}`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -19,7 +20,7 @@ export const _post = (url, data, success = (f) => f, error = (f) => f) => {
       error(err);
     });
 };
-export const  _get = (url, success = (f) => f, error = (f) => f) => {
+export const _get = (url, success = (f) => f, error = (f) => f) => {
   fetch(`${server_url}/${url}`)
     .then((raw) => raw.json())
     .then((result) => {
