@@ -1,50 +1,88 @@
-import React from "react";
+import React, { useState } from "react";
 import Carousel from "react-bootstrap/Carousel";
-import photoSlider1 from "../../Assets/photoslider1.jpg";
-import photoSlider2 from "../../Assets/photoslider2.jpg";
-import { Button } from "react-bootstrap";
+import photoSlider1 from "../../Assets/ymastudent.jpeg";
+import photoSlider2 from "../../Assets/ymastudent2.jpeg";
+import { Button, Col, Row } from "react-bootstrap";
+import "./home.css";
 import home from "../../Assets/student__2_-removebg-preview.png";
+import { Link } from "react-router-dom";
 
 export default function PhotoSlider() {
+  const [slider, setSlider] = useState([
+    {
+      attechment: photoSlider1,
+      title: "Yazeed Memorial Academy",
+      content:
+        "A certified institution offering quality primary and secondary education, focused on academic excellence, character development, and holistic growth",
+    },
+    {
+      attechment: photoSlider2,
+      title: "Yazeed Memorial Academy",
+      content:
+        "A certified institution offering quality primary and secondary education, focused on academic excellence, character development, and holistic growth",
+    },
+  ]);
+
   return (
     <>
-      {/* <Carousel
-      data-bs-theme="dark"
-      indicators={false}
-      interval={2000}
-    >
-      <Carousel.Item>
-        <div className="home">
-          <img className="d-block w-100" src={photoSlider1} alt="First slide" />
-          <div className="home-text">
-            <h3 data-animation="animated bounceInLeft">
-              Welcome
-              <br />
-              To Our<span>University</span>
-            </h3>
-            <p data-animation="animated bounceInRight">
-              We belive nothing is more important than education. The best
-              learning institution
-            </p>
-            <Button>Learn more</Button>
-          </div>
-        </div>
+      <Carousel data-bs-theme="dark" indicators={false} interval={2000}>
+        {slider?.map((slide) => (
+          <Carousel.Item>
+            <div
+              className="hero"
+              style={{
+                backgroundImage: `url(${
+                  slide.attechment || "../../Assets/ymastudent.jpeg"
+                })`,
+              }}
+            >
+              <div className="home">
+                <Row className="my-5 mg-5">
+                  <Col md="10" className="d-flex align-items-center">
+                    <div>
+                      <h1 className="head">{slide?.title}</h1>
+                      <p className="text-light">{slide?.content}</p>
+                      <button className="btn2">
+                        <Link to="how-to-register">Get Started</Link>
+                      </button>
+                    </div>
+                  </Col>
+                </Row>
+              </div>
+              {/* <div className="home-text">
+                <h3 data-animation="animated bounceInLeft">
+                  Welcome
+                  <br />
+                  To Our<span>University</span>
+                </h3>
+                <p data-animation="animated bounceInRight">
+                  We belive nothing is more important than education. The best
+                  learning institution
+                </p>
+                <Button>Learn more</Button>
+              </div> */}
+            </div>
 
-        <Carousel.Caption>
-          <h5>First slide label</h5>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-        <img className="d-block w-100" src={photoSlider2} alt="Second slide" />
-        <Carousel.Caption>
-          <h5>Second slide label</h5>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          <Button>Learn more</Button>
-        </Carousel.Caption>
-      </Carousel.Item>
-    </Carousel> */}
-      <div className="main-container">
+            {/* <Carousel.Caption>
+              <h5>First slide label</h5>
+              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            </Carousel.Caption> */}
+          </Carousel.Item>
+        ))}
+        {/* <Carousel.Item>
+          <img
+            className="d-block w-100"
+            src={photoSlider2}
+            alt="Second slide"
+          />
+          <Carousel.Caption>
+            <h5>Second slide label</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <Button>Learn more</Button>
+          </Carousel.Caption>
+        </Carousel.Item> */}
+      </Carousel>
+      {/* <div className="main-container">
         <div className="blur-circle1"></div>
         <div className="blur-circle2"></div>
 
@@ -68,7 +106,7 @@ export default function PhotoSlider() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </>
   );
 }

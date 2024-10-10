@@ -6,7 +6,7 @@ import Contact from "./Pages/Contact/Contact";
 import Courses from "./Pages/Courses/Courses";
 import Event from "./Pages/Event/Event";
 import Home from "./Pages/Home/Home";
-import Register from "./Pages/LogIn/Register";
+// import Register from "./Pages/LogIn/Register";
 
 export default function AppNavigation() {
   let routes = useRoutes([
@@ -34,10 +34,10 @@ export default function AppNavigation() {
       path: "/event",
       element: <Event />,
     },
-    {
-      path: "/register",
-      element: <Register />,
-    },
+    // {
+    //   path: "/register",
+    //   element: <Register />,
+    // },
     {
       path: "*",
       element: <Home />,

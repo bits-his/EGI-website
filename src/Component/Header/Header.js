@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./Header.css";
 import { Link } from "react-router-dom";
-import logo from "../../Assets/logo.png";
+import logo from "../../Assets/YMA.png";
 import { BiX } from "react-icons/bi";
 import { IoMenu } from "react-icons/io5";
 import { NavLink } from "react-router-dom";
@@ -30,9 +30,7 @@ export default function Header() {
         <div className="header-logo">
           <Link to="/" className="inner" title="Logo">
             <img src={logo} alt="logo" />
-            <h4>
-              Yazeed <br /> Academy
-            </h4>
+            <h4>Y M A</h4>
           </Link>
         </div>
         <nav className="nav-links">
@@ -101,17 +99,14 @@ export default function Header() {
             </li>
             <div className="d-flex justify-content-between">
               <a
-                href="https://yazeed-academy-app.elscholar.ng/application-form"
+                href="https://app.yma.elscholar.ng/application-form"
                 target="_blank"
               >
                 <div className="login">
                   <button className="register">Application</button>
                 </div>
               </a>
-              <a
-                href="https://yazeed-academy-app.elscholar.ng/login"
-                target="_blank"
-              >
+              <a href="https://app.yma.elscholar.ng/login" target="_blank">
                 <div className="login">
                   <button className="register">Returning Student</button>
                 </div>

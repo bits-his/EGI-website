@@ -1,5 +1,5 @@
 import "./footer.css";
-import logo from "../../Assets/logo.png";
+import logo from "../../Assets/YMA.png";
 import { HiOutlineMailOpen } from "react-icons/hi";
 import { LiaPhoneVolumeSolid } from "react-icons/lia";
 import { Link } from "react-router-dom";
@@ -32,8 +32,8 @@ export default function Footer() {
                       <HiOutlineMailOpen />
                     </span>
                     <span className="contact-text">
-                      <a href="mailto:info@kirmas.kn.gov.ng" className="">
-                        info@yazeed.com
+                      <a href="mailto:info@yma.elscholar.ng" className="">
+                        info@yma.elscholar.ng
                       </a>
                     </span>
                   </li>
@@ -51,6 +51,14 @@ export default function Footer() {
                     </span>
                     <span className="contact-text">
                       <a href="tel: 08065531596">+2348065531596 </a>
+                    </span>
+                  </li>
+                  <li className="contact-item">
+                    <span className="contact-icon">
+                      <LiaPhoneVolumeSolid />
+                    </span>
+                    <span className="contact-text">
+                      <a href="tel: 08148004490">+2348148004490 </a>
                     </span>
                   </li>
                 </ul>
@@ -157,6 +165,15 @@ export default function Footer() {
                           Afforestation Road, Unguwar Jakada Dorayi Babba,Kano
                         </div>
                       </li>
+                      <li>
+                        <div>
+                          {/* Delhi
+                          <br /> */}
+                          <IoLocationSharp />
+                          No. 11 Hablan House, Rijiyar Zaki Off Gwarzo Road,
+                          Kano
+                        </div>
+                      </li>
                     </ul>
                   </div>
                 </div>
@@ -176,7 +193,10 @@ export default function Footer() {
                 <li className="legal-item">Copyright © {date} YAZEED</li>
               </ul>
               <div className="footer-copyright">
-                <a href="http://elscholar.ng" className="text-light text-decoration-none">
+                <a
+                  href="http://elscholar.ng"
+                  className="text-light text-decoration-none"
+                >
                   <h2>Powered by Elite Academic Tech</h2>
                 </a>
               </div>
