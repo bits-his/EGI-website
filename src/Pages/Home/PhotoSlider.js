@@ -25,7 +25,7 @@ export default function PhotoSlider() {
 
   return (
     <>
-      <Carousel data-bs-theme="dark" indicators={false} interval={2000}>
+      {/* <Carousel data-bs-theme="dark" indicators={false} interval={2000}>
         {slider?.map((slide) => (
           <Carousel.Item>
             <div
@@ -49,40 +49,13 @@ export default function PhotoSlider() {
                   </Col>
                 </Row>
               </div>
-              {/* <div className="home-text">
-                <h3 data-animation="animated bounceInLeft">
-                  Welcome
-                  <br />
-                  To Our<span>University</span>
-                </h3>
-                <p data-animation="animated bounceInRight">
-                  We belive nothing is more important than education. The best
-                  learning institution
-                </p>
-                <Button>Learn more</Button>
-              </div> */}
             </div>
 
-            {/* <Carousel.Caption>
-              <h5>First slide label</h5>
-              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-            </Carousel.Caption> */}
+            
           </Carousel.Item>
         ))}
-        {/* <Carousel.Item>
-          <img
-            className="d-block w-100"
-            src={photoSlider2}
-            alt="Second slide"
-          />
-          <Carousel.Caption>
-            <h5>Second slide label</h5>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <Button>Learn more</Button>
-          </Carousel.Caption>
-        </Carousel.Item> */}
-      </Carousel>
-      {/* <div className="main-container">
+      </Carousel> */}
+      <div className="main-container">
         <div className="blur-circle1"></div>
         <div className="blur-circle2"></div>
 
@@ -106,7 +79,7 @@ export default function PhotoSlider() {
             </div>
           </div>
         </div>
-      </div> */}
+      </div>
     </>
   );
 }

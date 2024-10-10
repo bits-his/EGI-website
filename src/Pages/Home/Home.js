@@ -14,7 +14,7 @@ export default function Home() {
       <Certificate />
       <Offer /> 
       <HomeCourse />
-      <VidSection />
+      {/* <VidSection /> */}
     </>
   );
 }

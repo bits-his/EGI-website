@@ -11,9 +11,13 @@ export default function VidSection() {
               type="video/mp4"
             />
           </video>
-          <h2>Welcome to Our Grooming Institution</h2>
-          <p>Discover our expertise in grooming, spa services, and more.</p>
-          <button>Book Now</button>
+          <h2>Yazeed Memorial Academy</h2>
+          <p>
+            A certified institution offering quality primary and secondary
+            education, focused on academic excellence, character development,
+            and holistic growth
+          </p>
+          <button>Apply Now</button>
         </div>
       </div>
     </>
