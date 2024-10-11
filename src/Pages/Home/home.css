@@ -2,16 +2,11 @@
 
 .home {
   background-image: linear-gradient(155deg, #ffc8229d 25%, #14352598 100%);
-  margin: 0;
-  /* opacity: 0.9; */
-  background-repeat: no-repeat;
   width: 100%;
-  background-size: cover;
-  background-position: cover;
   display: flex;
   align-items: center;
-  position: relative;
-  z-index: 1;
+  justify-content: center;
+  /* z-index: 1; */
   height: 80vh;
   bottom: 0;
 }
@@ -19,9 +14,8 @@
 .hero {
   min-height: 80vh;
   background-repeat: no-repeat;
-  /* background-position: cover; */
   background-size: cover;
-  z-index: 0;
+  /* z-index: 0; */
   object-fit: cover;
   height: 100%;
 }
@@ -42,6 +36,10 @@
     font-size: 13px;
   }
 }
+
+
+
+
 * {
   padding: 0px;
   margin: 0px;

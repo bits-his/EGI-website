@@ -25,37 +25,34 @@ export default function PhotoSlider() {
 
   return (
     <>
-      {/* <Carousel data-bs-theme="dark" indicators={false} interval={2000}>
+      <Carousel data-bs-theme="dark" indicators={false} interval={2000}>
         {slider?.map((slide) => (
           <Carousel.Item>
             <div
               className="hero"
               style={{
-                backgroundImage: `url(${
-                  slide.attechment || "../../Assets/ymastudent.jpeg"
-                })`,
+                backgroundImage: `url(${slide.attechment || "../../Assets/ymastudent.jpeg"
+                  })`,
               }}
             >
               <div className="home">
-                <Row className="my-5 mg-5">
-                  <Col md="10" className="d-flex align-items-center">
-                    <div>
-                      <h1 className="head">{slide?.title}</h1>
-                      <p className="text-light">{slide?.content}</p>
-                      <button className="btn2">
-                        <Link to="how-to-register">Get Started</Link>
-                      </button>
-                    </div>
-                  </Col>
-                </Row>
+                <div className="d-flex align-items-center">
+                  <div>
+                    <h1>{slide?.title}</h1>
+                    <p>{slide?.content}</p>
+                    <button>
+                      <Link to="#">Learn More</Link>
+                    </button>
+                  </div>
+                </div>
               </div>
             </div>
 
-            
+
           </Carousel.Item>
         ))}
-      </Carousel> */}
-      <div className="main-container">
+      </Carousel>
+      {/* <div className="main-container">
         <div className="blur-circle1"></div>
         <div className="blur-circle2"></div>
 
@@ -79,7 +76,7 @@ export default function PhotoSlider() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </>
   );
 }

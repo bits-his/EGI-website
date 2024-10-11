@@ -5,6 +5,7 @@
   --text-color: #fff;
   --link-color: #000;
   --link-hover-color: #f7c51d;
+  --primary-color: #2d2ece;
 }
 body {
   box-sizing: border-box;

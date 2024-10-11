@@ -35,9 +35,8 @@ export default function Header() {
         </div>
         <nav className="nav-links">
           <ul
-            className={`navigation ${isOpen ? "open" : ""} ${
-              isSticky ? "whitelink" : ""
-            }`}
+            className={`navigation ${isOpen ? "open" : ""} ${isSticky ? "whitelink" : ""
+              }`}
           >
             <li className="">
               <NavLink to="/">Home</NavLink>
@@ -53,28 +52,28 @@ export default function Header() {
                   <a
                     href="#"
                     style={{ color: "var(--link-color)" }}
-                    // target="_blank"
+                  // target="_blank"
                   >
                     Pre Nursery
                   </a>
                   <a
                     href="#"
                     style={{ color: "var(--link-color)" }}
-                    // target="_blank"
+                  // target="_blank"
                   >
                     Nursery section
                   </a>
                   <a
                     href="#"
                     style={{ color: "var(--link-color)" }}
-                    // target="_blank"
+                  // target="_blank"
                   >
                     Primary section
                   </a>
                   <a
                     href="#"
                     style={{ color: "var(--link-color)" }}
-                    // target="_blank"
+                  // target="_blank"
                   >
                     Secondary section
                   </a>
@@ -97,7 +96,7 @@ export default function Header() {
                 Contact
               </NavLink>
             </li>
-            <div className="d-flex justify-content-between">
+            <div className="d-flex justify-content-between d-lg-none">
               <a
                 href="https://app.yma.elscholar.ng/application-form"
                 target="_blank"
@@ -113,7 +112,23 @@ export default function Header() {
               </a>
             </div>
           </ul>
+
         </nav>
+      </div>
+      <div className="d-lg-flex justify-content-between d-md-none">
+        <a
+          href="https://app.yma.elscholar.ng/application-form"
+          target="_blank"
+        >
+          <div className="login">
+            <button className="register">Application</button>
+          </div>
+        </a>
+        <a href="https://app.yma.elscholar.ng/login" target="_blank">
+          <div className="login">
+            <button className="register">Returning Student</button>
+          </div>
+        </a>
       </div>
       <div className="hamburger">
         <button onClick={handleClick}>{isOpen ? <BiX /> : <IoMenu />}</button>
