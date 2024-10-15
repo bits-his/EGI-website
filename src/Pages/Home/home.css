@@ -3,39 +3,50 @@
 .home {
   background-image: linear-gradient(155deg, #ffc8229d 25%, #14352598 100%);
   width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  /* z-index: 1; */
-  height: 80vh;
-  bottom: 0;
+  height: 100vh; /* Ensure it takes full height */
+  position: relative; /* To position child elements */
+  display: flex; /* To center content */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
 }
 
 .hero {
-  min-height: 80vh;
+  height: 90vh; /* Full height for the carousel item */
+  width: 100%; /* Full width */
   background-repeat: no-repeat;
-  background-size: cover;
-  /* z-index: 0; */
-  object-fit: cover;
-  height: 100%;
+  background-size: cover; /* Ensure it covers the whole area */
+  background-position: top center; /* Center the image */
+  display: flex; /* To center content */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
 }
-.home-text h3 {
+
+.home-text {
+  color: white; /* Text color for visibility */
+  text-align: center; /* Center align text */
+  padding: 20px; /* Padding for spacing */
+}
+
+.home-text h1 {
   font-size: 3.2em;
   font-weight: 600;
   margin-bottom: 20px;
+  color: var(--primary-color);
 }
-.home-text h3 span {
-  color: var(--main-color);
-}
-.homepage-text p {
-  font-size: 20px;
+
+.home-text p {
+  font-size: 1.5em; /* Adjusted for better readability */
   font-weight: 400;
   margin-bottom: 20px;
   max-width: 80%;
-  @media screen and (max-width: 570px) {
+}
+
+@media screen and (max-width: 570px) {
+  .home-text p {
     font-size: 13px;
   }
 }
+
 
 
 

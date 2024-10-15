@@ -2,21 +2,20 @@ import React, { useState } from "react";
 import Carousel from "react-bootstrap/Carousel";
 import photoSlider1 from "../../Assets/ymastudent.jpeg";
 import photoSlider2 from "../../Assets/ymastudent2.jpeg";
-import { Button, Col, Row } from "react-bootstrap";
+import { Button } from "react-bootstrap";
 import "./home.css";
 import home from "../../Assets/student__2_-removebg-preview.png";
-import { Link } from "react-router-dom";
 
 export default function PhotoSlider() {
   const [slider, setSlider] = useState([
     {
-      attechment: photoSlider1,
+      attachment: photoSlider1,
       title: "Yazeed Memorial Academy",
       content:
         "A certified institution offering quality primary and secondary education, focused on academic excellence, character development, and holistic growth",
     },
     {
-      attechment: photoSlider2,
+      attachment: photoSlider2,
       title: "Yazeed Memorial Academy",
       content:
         "A certified institution offering quality primary and secondary education, focused on academic excellence, character development, and holistic growth",
@@ -25,58 +24,41 @@ export default function PhotoSlider() {
 
   return (
     <>
-      <Carousel data-bs-theme="dark" indicators={false} interval={2000}>
-        {slider?.map((slide) => (
-          <Carousel.Item>
+      <Carousel data-bs-theme="dark" controls={false} indicators={false} interval={2000}>
+        {slider?.map((slide, index) => (
+          <Carousel.Item key={index}>
             <div
               className="hero"
               style={{
-                backgroundImage: `url(${slide.attechment || "../../Assets/ymastudent.jpeg"
-                  })`,
+                backgroundImage: `url(${slide.attachment})`,
               }}
             >
               <div className="home">
-                <div className="d-flex align-items-center">
-                  <div>
-                    <h1>{slide?.title}</h1>
-                    <p>{slide?.content}</p>
-                    <button>
-                      <Link to="#">Learn More</Link>
-                    </button>
+                <div className="home-text">
+                  <h1 data-aos="fade-right">Yazeed Memorial Academy</h1>
+                  <p data-aos="fade-left">{slide.content}</p>
+                  <div className="d-flex" data-aos="fade-up">
+                    <a
+                      href="https://app.yma.elscholar.ng/application-form"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <div className="login">
+                        <button className="register">Application</button>
+                      </div>
+                    </a>
+                    <a href="https://app.yma.elscholar.ng/login" target="_blank" rel="noopener noreferrer">
+                      <div className="login">
+                        <button className="register">Returning Student</button>
+                      </div>
+                    </a>
                   </div>
                 </div>
               </div>
             </div>
-
-
           </Carousel.Item>
         ))}
       </Carousel>
-      {/* <div className="main-container">
-        <div className="blur-circle1"></div>
-        <div className="blur-circle2"></div>
-
-        <div className="landing-page">
-          <div className="content">
-            <div className="containered">
-              <div className="info">
-                <h1>
-                  Yazeed <br /> Memorial Academy
-                </h1>
-                <p>
-                  A certified institution offering quality primary and secondary
-                  education, focused on academic excellence, character
-                  development, and holistic growth
-                </p>
-                <button>Learn More</button>
-              </div>
-              <div className="image">
-                <img className="main-image" src={home} />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> */}
     </>
   );
 }

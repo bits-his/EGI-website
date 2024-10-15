@@ -47,38 +47,9 @@ export default function Header() {
               </NavLink>
             </li>
             <li>
-              <NavDropdown title="Program" id="courses" as={"div"}>
-                <NavDropdown.Item as={"div"}>
-                  <a
-                    href="#"
-                    style={{ color: "var(--link-color)" }}
-                  // target="_blank"
-                  >
-                    Pre Nursery
-                  </a>
-                  <a
-                    href="#"
-                    style={{ color: "var(--link-color)" }}
-                  // target="_blank"
-                  >
-                    Nursery section
-                  </a>
-                  <a
-                    href="#"
-                    style={{ color: "var(--link-color)" }}
-                  // target="_blank"
-                  >
-                    Primary section
-                  </a>
-                  <a
-                    href="#"
-                    style={{ color: "var(--link-color)" }}
-                  // target="_blank"
-                  >
-                    Secondary section
-                  </a>
-                </NavDropdown.Item>
-              </NavDropdown>
+              <NavLink to="/a" title="About">
+                Program
+              </NavLink>
             </li>
             <li onClick={handleClick}>
               <NavLink to="/e" title="Event">
@@ -96,40 +67,10 @@ export default function Header() {
                 Contact
               </NavLink>
             </li>
-            <div className="d-flex justify-content-between d-lg-none">
-              <a
-                href="https://app.yma.elscholar.ng/application-form"
-                target="_blank"
-              >
-                <div className="login">
-                  <button className="register">Application</button>
-                </div>
-              </a>
-              <a href="https://app.yma.elscholar.ng/login" target="_blank">
-                <div className="login">
-                  <button className="register">Returning Student</button>
-                </div>
-              </a>
-            </div>
           </ul>
-
         </nav>
       </div>
-      <div className="d-lg-flex justify-content-between d-md-none">
-        <a
-          href="https://app.yma.elscholar.ng/application-form"
-          target="_blank"
-        >
-          <div className="login">
-            <button className="register">Application</button>
-          </div>
-        </a>
-        <a href="https://app.yma.elscholar.ng/login" target="_blank">
-          <div className="login">
-            <button className="register">Returning Student</button>
-          </div>
-        </a>
-      </div>
+
       <div className="hamburger">
         <button onClick={handleClick}>{isOpen ? <BiX /> : <IoMenu />}</button>
       </div>

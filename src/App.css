@@ -5,11 +5,12 @@
   --text-color: #fff;
   --link-color: #000;
   --link-hover-color: #f7c51d;
-  --primary-color: #2d2ece;
+  --primary-color: #3b3cf2;
 }
 body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   color: var(--link-color);
+  /* background-color: var(--primary-color); */
 }
