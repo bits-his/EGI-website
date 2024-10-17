@@ -5,10 +5,10 @@ import welcome2 from "../../../Assets/nursery.png"
 import welcome3 from "../../../Assets/welcome3.jpg"
 // import welcome4 from "../../../Assets/photoslider2.jpg"
 
-export default function HomeCourse() {
+export default function HomeCourse({sectionRef}) {
   return (
     <>
-      <div className="Home-course-Card p-5">
+      <div className="Home-course-Card p-5" id="program" ref={sectionRef}>
         <h2 className="container-heading">Our Programs</h2>
         <div className="row">
           <HomeCourseCard

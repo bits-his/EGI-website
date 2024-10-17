@@ -32,6 +32,7 @@ ul {
 li {
   list-style-type: none;
   padding: 0;
+  color: white;
 }
 
 /* #courses,
@@ -47,6 +48,8 @@ li {
 
 .header-logo {
   width: 40%;
+  @media (width < 546px) {
+  }
 }
 .header-logo a {
   text-decoration: none !important;
@@ -66,7 +69,7 @@ li {
 }
 .header-logo a h4 {
   margin-left: 12px;
-  color: var(--highlight-color);
+  color: var(--primary-color);
   font-size: 0.8em;
   font-family: "Figtree", sans-serif;
 }
@@ -93,10 +96,10 @@ li {
   font-family: "Figtree", sans-serif;
 }
 .nav-links .navigation li a:hover {
-  color: var(--link-hover-color);
+  color: var(--highlight-color);
 }
 .nav-links .navigation li .active {
-  color: var(--link-hover-color);
+  color: var(--highlight-color);
 }
 .register {
   position: relative;
@@ -174,7 +177,6 @@ li {
     background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
   }
 }
-
 .register:hover::after {
   bottom: -70%;
   background-image: radial-gradient(
@@ -373,16 +375,18 @@ div.dropdown-item {
       text-decoration: none !important;
     }
     & .inner {
-      left: 50px;
-
+      left: 20px;
       & h4 {
         margin-left: 12px;
         color: var(--highlight-color);
         font-size: 1em;
       }
+      & img {
+        height: 55px;
+      }
     }
     & :is(img) {
-      height: 50px;
+      height: 40px;
       display: block;
     }
   }

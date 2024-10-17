@@ -1,44 +1,49 @@
 @import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap");
 
 .home {
-  background-image: linear-gradient(155deg, #ffc8229d 25%, #14352598 100%);
+  background-image: linear-gradient(
+    5deg,
+    var(--primary-color) 1%,
+    #14352598 100%
+  );
   width: 100%;
-  height: 100vh; /* Ensure it takes full height */
-  position: relative; /* To position child elements */
-  display: flex; /* To center content */
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .hero {
-  height: 90vh; /* Full height for the carousel item */
-  width: 100%; /* Full width */
+  height: 90vh;
+  width: 100%;
   background-repeat: no-repeat;
-  background-size: cover; /* Ensure it covers the whole area */
-  background-position: top center; /* Center the image */
-  display: flex; /* To center content */
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
+  background-size: cover;
+  background-position: top center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .home-text {
-  color: white; /* Text color for visibility */
-  text-align: center; /* Center align text */
-  padding: 20px; /* Padding for spacing */
+  color: white;
+  text-align: center;
+  padding: 20px;
 }
 
 .home-text h1 {
   font-size: 3.2em;
   font-weight: 600;
   margin-bottom: 20px;
-  color: var(--primary-color);
+  color: var(--highlight-color);
 }
 
 .home-text p {
-  font-size: 1.5em; /* Adjusted for better readability */
+  font-size: 1.5em; 
   font-weight: 400;
   margin-bottom: 20px;
   max-width: 80%;
+  margin-inline: auto;
 }
 
 @media screen and (max-width: 570px) {
@@ -46,10 +51,6 @@
     font-size: 13px;
   }
 }
-
-
-
-
 
 * {
   padding: 0px;
@@ -179,7 +180,6 @@ body {
   max-width: 100%;
 }
 /* End Landing Page */
-
 .main-image {
   /* mix-blend-mode:exclusion */
   width: 600px;
@@ -196,6 +196,9 @@ p {
   justify-content: center;
   align-items: center;
   padding-inline: 40px;
+  @media (width < 546px) {
+    padding-inline: 10px;
+  }
 }
 
 .offer h3 {
@@ -206,13 +209,16 @@ p {
   /* text-align: center; */
 }
 .offer p {
-  font-size: 23px;
+  font-size: 21px;
   font-weight: 500;
   color: var(--background-color);
   font-family: "Figtree", sans-serif;
   /* max-width: 90%; */
-  opacity: 0.9;
+  opacity: 0.8;
   text-align: justify;
+  @media (width < 546px) {
+    font-size: 18px;
+  }
 }
 .offer-icon-section {
   display: flex;
@@ -226,8 +232,9 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 120px;
-  height: 100%;
+  width: 80px;
+  height: 80px;
+  margin-left: 0;
 }
 
 .offer-icon-section .offer-icon svg {
@@ -240,20 +247,23 @@ p {
 }
 .offer-icon-section .offer-icon-desc p {
   font-family: dosis;
-  font-size: 20px;
-  opacity: 0.8;
-  color: var(--link-color);
+  font-size: 19px;
+  /* opacity: 0.7; */
+  text-align: left;
+  letter-spacing: 0.8px;
+  color: rgba(0, 0, 0, 0.766);
   line-height: 1.2;
   font-family: "Figtree", sans-serif;
 }
 
 .offer-icon-section .offer-icon-desc h2 {
   font-family: dosis;
-  font-size: 30px;
+  font-size: 28px;
   font-weight: 600;
-  opacity: 0.9;
+  opacity: 0.8;
   color: var(--link-color);
   line-height: 1.2;
+  letter-spacing: 0.6px;
   /* margin-top: 18px; */
 }
 .offer-side {
@@ -262,24 +272,109 @@ p {
 
 /* ======================================vidSection=================================== */
 .vid-container {
-  /* display: flex; */
-  /* justify-content: center; */
-  /* align-items: center; */
   background-image: url("../../Assets/ymastudent.jpeg");
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
   width: 100%;
-  height: 100%;
+  height: 100vh; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center; 
+  position: relative; 
 }
+
 .vid-content {
-  background-color: #ffc82286;
-  opacity: #0505ed00;
-  height: 70vh;
-  width: 100%;
-  /* background-image: url("../../Assets/ymastudent.jpeg"); */
+  background-image: linear-gradient(
+    to left,
+    #3b3bf2c8 10%,
+    #14352598 100%
+  );
+  width: 100%; 
+  height: 100vh;  /* Changed to match container height */
+  position: absolute;
+  top: 0;  /* Ensure it starts from the top */
+  left: 0; /* Ensure it starts from the left */
 }
+
+.vid-content-program {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  padding: 20px;
+  gap: 20px; 
+  width: 100%;  
+  margin-top: 10%;
+}
+
+.vid {
+  max-width: 500px; 
+  border-radius: 10px; 
+  overflow: hidden; 
+}
+
+.vid video {
+  width: 100%; 
+  height: auto; 
+}
+
+.vid-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.vid-text h2 {
+  font-size: 3em;
+  font-weight: 600;
+  margin: 0; 
+  color: var(--highlight-color);
+}
+
+.vid-text p {
+  color: var(--text-color);
+  font-size: 25px;
+  max-width: 400px; 
+}
+
+.counter-section {
+  padding: 20px;
+  gap: 20px; 
+  width: 80%; 
+  /* display: grid;
+  justify-content: center; */
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.counter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 10px; 
+  /* background: rgba(255, 255, 255, 0.8);  */
+  border-radius: 10px; 
+  flex: 1; 
+  margin: 0 10px; 
+  width: calc((100% - 20px) / 3); 
+}
+
+.counter-number {
+  font-size: 2em; 
+  font-weight: bold; 
+  color: var(--text-color);
+}
+
+.counter-title {
+  font-size: 1.2em; 
+  margin-top: 10px;
+  color: var(--text-color);
+}
+
+
 
 /* ========================================responsive=============================== */
 @media (width < 992px) {
@@ -305,11 +400,61 @@ p {
     gap: 40px;
     min-height: calc(100vh - 80px);
   }
+  .offer p {
+    font-size: 20px;
+  }
 }
 @media (width < 768px) {
 }
 @media (width < 542px) {
   .course {
     width: 100%;
+  }
+  .offer-icon-section .offer-icon-desc h2 {
+    font-size: 23px;
+  }
+  .offer-icon-section .offer-icon-desc p {
+    font-size: 16px;
+    text-align: left;
+  }
+  .offer-icon-section .offer-icon {
+    height: 70px;
+    width: 70px;
+  }
+  .offer-icon-section .offer-icon svg {
+    font-size: 30px;
+  }
+  .course {
+    width: 100% !important;
+  }
+  .vid-content-program {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px; 
+    width: 100%;  
+  }
+  .vid-text h2 {
+    font-size: 2em;
+    font-weight: 600;
+    margin: 0; 
+    color: var(--highlight-color);
+  }
+  
+  .vid-text p {
+    color: var(--text-color);
+    font-size: 17px;
+    max-width: 400px; 
+  }
+  .counter-section {
+    padding: 0px;
+    gap: 20px; 
+    width: 96%; 
+    /* display: grid;
+    justify-content: center; */
+    margin-left: 2%;
+    margin-right: 2%;
   }
 }

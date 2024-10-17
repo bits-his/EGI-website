@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
 
 .footer-container {
-  background-color: var(--background-color);
+  background-color: var(--primary-color);
   color: var(--text-color);
   padding: 20px;
   bottom: 0;

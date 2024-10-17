@@ -6,10 +6,10 @@ import { LuShieldCheck } from "react-icons/lu";
 import { SiSololearn, SiTicktick } from "react-icons/si";
 import { VscGitPullRequestCreate } from "react-icons/vsc";
 
-export default function Offer() {
+export default function Offer({sectionRef}) {
   return (
     <>
-      <div className="p-3">
+      <div className="p-3" ref={sectionRef} id="about">
         <h2 className="container-heading">About Us</h2>
         <div className="row">
           <div className="col-md-12">
@@ -57,8 +57,7 @@ export default function Offer() {
                     <h2>Experienced Educators</h2>
                     <p>
                       Skilled professionals committed to delivering quality
-                      education and nurturing student growth through engaging
-                      teaching methods.
+                      education and nurturing student growth.
                     </p>
                   </div>
                 </div>

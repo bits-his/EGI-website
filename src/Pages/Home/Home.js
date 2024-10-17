@@ -7,14 +7,18 @@ import Certificate from "./Certificate.jsx/Certificate";
 import Offer from "./Offer";
 import VidSection from "./VidSection";
 
-export default function Home() {
+export default function Home({ sections }) {
   return (
     <>
-      <PhotoSlider />
+      <PhotoSlider sectionRef={sections.home} />
       <Certificate />
-      <Offer /> 
-      <HomeCourse />
-      <VidSection />
+
+      <Offer id="about"
+        sectionRef={sections.about} />
+
+
+      <HomeCourse sectionRef={sections.program}  />
+      <VidSection sectionRef={sections.event}  />
     </>
   );
 }
