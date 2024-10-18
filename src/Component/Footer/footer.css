@@ -115,13 +115,22 @@
   font-size: 16px;
   color: var(--text-color);
   text-decoration: none;
+  @media (max-width: 540px) {
+    font-size: 12px;
+  }
 }
 .legal-item a {
   color: var(--text-color);
   text-decoration: none;
+  @media (max-width: 540px) {
+    font-size: 12px;
+  }
 }
 .footer-copyright h2 {
   font-size: 16px;
+   @media (max-width: 540px) {
+    font-size: 14px;
+  }
 }
 footer #subscribe {
   margin: 20px 0px 30px;

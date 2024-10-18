@@ -1,11 +1,11 @@
 import React from "react";
 import HomeCourseCard from "./HomeCourseCard";
-import welcome1 from "../../../Assets/group.png"
-import welcome2 from "../../../Assets/nursery.png"
-import welcome3 from "../../../Assets/welcome3.jpg"
+import welcome1 from "../../../Assets/group.png";
+import welcome2 from "../../../Assets/nursery.png";
+import welcome3 from "../../../Assets/welcome3.jpg";
 // import welcome4 from "../../../Assets/photoslider2.jpg"
 
-export default function HomeCourse({sectionRef}) {
+export default function HomeCourse({ sectionRef }) {
   return (
     <>
       <div className="Home-course-Card p-5" id="program" ref={sectionRef}>
@@ -14,21 +14,29 @@ export default function HomeCourse({sectionRef}) {
           <HomeCourseCard
             attechment={welcome1}
             title="PRE NURSERY SECTION"
+            location={"up"}
+            time={200}
             content="Our Pre-Nursery Section nurtures creativity and hands-on learning, with educators using play-based methods to support essential skill development."
           />
           <HomeCourseCard
             attechment={welcome1}
             title="NURSERY SECTION"
+            location={"down"}
+            time={300}
             content="Our Nursery Section encourages exploration and growth, with experienced educators supporting social, emotional, and cognitive development through engaging activities and structured play."
           />
           <HomeCourseCard
             attechment={welcome1}
             title="PRIMARY SECTION"
+            location={"up"}
+            time={400}
             content="Our Primary Section emphasizes academic excellence and personal growth, with dedicated educators fostering critical thinking and social skills in a stimulating learning environment."
           />
           <HomeCourseCard
             attechment={welcome1}
             title="SECONDARY SECTION"
+            location={"down"}
+            time={500}
             content="Our Secondary Section prepares students for academic success and future challenges, emphasizing critical thinking, creativity, collaboration, and social awareness."
           />
           {/* <HomeCourseCard

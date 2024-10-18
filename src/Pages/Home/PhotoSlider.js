@@ -10,13 +10,13 @@ export default function PhotoSlider({ sectionRef }) {
   const [slider, setSlider] = useState([
     {
       attachment: photoSlider1,
-      title: "Yazeed Memorial Academy",
+      title: "Yazid Memorial Academy",
       content:
         "A certified institution offering quality primary and secondary education, focused on academic excellence, character development, and holistic growth",
     },
     {
       attachment: photoSlider2,
-      title: "Yazeed Memorial Academy",
+      title: "Yazid Memorial Academy",
       content:
         "A certified institution offering quality primary and secondary education, focused on academic excellence, character development, and holistic growth",
     },
@@ -39,7 +39,7 @@ export default function PhotoSlider({ sectionRef }) {
               >
                 <div className="home">
                   <div className="home-text">
-                    <h1 data-aos="fade-right">Yazeed Memorial Academy</h1>
+                    <h1 data-aos="fade-right">Yazid Memorial Academy</h1>
                     <p className="text-center" data-aos="fade-left">
                       {slide.content}
                     </p>
@@ -62,7 +62,9 @@ export default function PhotoSlider({ sectionRef }) {
                         rel="noopener noreferrer"
                       >
                         <div className="login">
-                          <button className="register">Returning Student</button>
+                          <button className="register">
+                            Returning Student
+                          </button>
                         </div>
                       </a>
                     </div>
@@ -71,8 +73,8 @@ export default function PhotoSlider({ sectionRef }) {
               </div>
             </Carousel.Item>
           ))}
-        </Carousel></div>
-
+        </Carousel>
+      </div>
     </>
   );
 }

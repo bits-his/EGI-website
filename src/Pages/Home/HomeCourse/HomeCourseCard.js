@@ -10,9 +10,16 @@ export default function HomeCourseCard({
   title,
   created_at,
   content,
+  time,
+  location,
 }) {
   return (
-    <div className="col-lg-3 col-md-6 col-sm-12 p-0 mb-4">
+    <div
+      className="col-lg-3 col-md-6 col-sm-12 p-0 mb-4"
+      data-aos={`fade-${location}`}
+      data-aos-duration={`${time}`}
+      data-aos-once="false"
+    >
       <div className="course shadow">
         <div className="course-img mb-3">
           <img src={attechment} alt="blog1" />

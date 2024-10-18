@@ -13,7 +13,7 @@ export default function Home({ sections }) {
       <PhotoSlider sectionRef={sections.home} />
       <Certificate />
 
-      <Offer id="about"
+      <Offer
         sectionRef={sections.about} />
 
 

@@ -20,7 +20,7 @@ export default function Footer() {
               </div>
               <div className="footer-description">
                 <p>
-                  Yazeed Academy is dedicated to providing quality education and
+                  Yazid Academy is dedicated to providing quality education and
                   fostering holistic development in students, preparing them for
                   future success
                 </p>
@@ -190,7 +190,7 @@ export default function Footer() {
                   <a href="#">Terms and Conditions</a>
                 </li>
                 <span>|</span>
-                <li className="legal-item">Copyright © {date} YAZEED</li>
+                <li className="legal-item">Copyright © {date} Yazid</li>
               </ul>
               <div className="footer-copyright">
                 <a
