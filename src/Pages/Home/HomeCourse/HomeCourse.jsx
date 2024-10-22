@@ -16,28 +16,28 @@ export default function HomeCourse({ sectionRef }) {
             title="NURSERY SECTION"
             location={"up"}
             time={200}
-            content="Our Pre-Nursery Section nurtures creativity and hands-on learning, with dedicated educators using play-based methods to support skill development and foster a love for exploration and growth."
+            content="Our Nursery Section nurtures creativity and hands-on learning, with dedicated educators using play-based methods to support skill development and foster a love for exploration and growth."
           />
           <HomeCourseCard
             attechment={welcome1}
             title="PRIMARY SECTION"
             location={"down"}
             time={300}
-            content="Our Nursery Section encourages exploration and growth, with experienced educators supporting social, emotional, and cognitive development through engaging activities and structured play."
+            content="Our PRIMARY Section encourages exploration and growth, with experienced educators supporting social, emotional, and cognitive development through engaging activities and structured play."
           />
           <HomeCourseCard
             attechment={welcome1}
             title="SECONDARY SECTION"
             location={"up"}
             time={400}
-            content="Our Primary Section emphasizes academic excellence and personal growth, with dedicated educators fostering critical thinking and social skills in a stimulating learning environment."
+            content="Our SECONDARY Section emphasizes academic excellence and personal growth, with dedicated educators fostering critical thinking and social skills in a stimulating learning environment."
           />
           <HomeCourseCard
             attechment={welcome1}
             title="ISLAMIYYA SECTION"
             location={"down"}
             time={500}
-            content="Our Secondary Section prepares students for academic success and future challenges, emphasizing critical thinking, creativity, collaboration, and social awareness."
+            content="The Islamiyya Section offers education in Islamic studies and Arabic, fostering a deep understanding of faith and culture while promoting personal growth, ethical values, and community involvement."
           />
           {/* <HomeCourseCard
             attechment={welcome1}
