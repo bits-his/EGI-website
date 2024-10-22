@@ -27,7 +27,7 @@ export default function Contact({ sectionRef }) {
         <div className="row">
           <div className="col-lg-6">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7805.694927564372!2d8.464658436795093!3d11.985054652987532!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x11ae7f8628f12309%3A0x117a2b3116d9c07c!2sThe%20Caliphate%20Nursery%20%26%20Primary%20School!5e0!3m2!1sen!2sng!4v1729600291930!5m2!1sen!2sng"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3903.1341486411116!2d8.454401869012885!3d11.9652127623303!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x11ae7f342194227d%3A0x1dd18cf5fb0c4b53!2sYazid%20memorial%20academy%20kano!5e0!3m2!1sen!2sng!4v1729606653012!5m2!1sen!2sng"
               width="100%"
               height="500"
               allowfullscreen=""
