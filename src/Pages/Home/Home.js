@@ -6,6 +6,7 @@ import Certified from "./Certificate.jsx/Certified";
 import Certificate from "./Certificate.jsx/Certificate";
 import Offer from "./Offer";
 import VidSection from "./VidSection";
+import Contact from "./Contact";
 
 export default function Home({ sections }) {
   return (
@@ -13,12 +14,11 @@ export default function Home({ sections }) {
       <PhotoSlider sectionRef={sections.home} />
       <Certificate />
 
-      <Offer
-        sectionRef={sections.about} />
+      <Offer sectionRef={sections.about} />
 
-
-      <HomeCourse sectionRef={sections.program}  />
-      <VidSection sectionRef={sections.event}  />
+      <HomeCourse sectionRef={sections.program} />
+      <VidSection sectionRef={sections.event} />
+      <Contact sectionRef={sections.contact} />
     </>
   );
 }

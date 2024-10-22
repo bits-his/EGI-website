@@ -16,7 +16,7 @@ export default function HomeCourse({ sectionRef }) {
             title="PRE NURSERY SECTION"
             location={"up"}
             time={200}
-            content="Our Pre-Nursery Section nurtures creativity and hands-on learning, with educators using play-based methods to support essential skill development."
+            content="Our Pre-Nursery Section nurtures creativity and hands-on learning, with dedicated educators using play-based methods to support skill development and foster a love for exploration and growth."
           />
           <HomeCourseCard
             attechment={welcome1}
