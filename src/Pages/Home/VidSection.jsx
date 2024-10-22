@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import ReactPlayer from "react-player/lazy";
 import { Col, Row } from "reactstrap";
+import ved from "../../Assets/ved.mp4";
 
 export default function VidSection({ sectionRef }) {
   const countersRef = useRef([]);
@@ -66,7 +67,7 @@ export default function VidSection({ sectionRef }) {
                 playIcon={true}
                 // light={true}
                 controls={true}
-                url="https://www.facebook.com/watch/?v=203953677767437"
+                url={ved}
                 width={"550px"}
                 height={"430px"}
               />
@@ -77,9 +78,9 @@ export default function VidSection({ sectionRef }) {
               data-aos="fade-left"
               data-aos-duration="200"
             >
-              <h2>Yazid Memorial Academy</h2>
+              <h2>The Caliphate School Kano</h2>
               <p>
-                A certifie.d institution offering quality primary and secondary
+                A certified institution offering quality primary and secondary
                 education, focused on academic excellence, character
                 development, and holistic growth
               </p>

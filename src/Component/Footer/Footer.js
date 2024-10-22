@@ -1,5 +1,5 @@
 import "./footer.css";
-import logo from "../../Assets/YMA.png";
+import logo from "../../Assets/caliphate_logo.png";
 import { HiOutlineMailOpen } from "react-icons/hi";
 import { LiaPhoneVolumeSolid } from "react-icons/lia";
 import { Link } from "react-router-dom";
@@ -20,7 +20,7 @@ export default function Footer() {
               </div>
               <div className="footer-description">
                 <p>
-                  Yazid Academy is dedicated to providing quality education and
+                  The Caliphate is dedicated to providing quality education and
                   fostering holistic development in students, preparing them for
                   future success
                 </p>
@@ -32,8 +32,11 @@ export default function Footer() {
                       <HiOutlineMailOpen />
                     </span>
                     <span className="contact-text">
-                      <a href="mailto:info@yma.elscholar.ng" className="">
-                        info@yma.elscholar.ng
+                      <a
+                        href="mailto:caliphateschools2020@yahoo.com"
+                        className=""
+                      >
+                        caliphateschools2020@yahoo.com
                       </a>
                     </span>
                   </li>
@@ -42,10 +45,10 @@ export default function Footer() {
                       <LiaPhoneVolumeSolid />
                     </span>
                     <span className="contact-text">
-                      <a href="tel: 08037871418">+2348037871418 </a>
+                      <a href="tel: 08080802367">+2348080802367 </a>
                     </span>
                   </li>
-                  <li className="contact-item">
+                  {/* <li className="contact-item">
                     <span className="contact-icon">
                       <LiaPhoneVolumeSolid />
                     </span>
@@ -60,7 +63,7 @@ export default function Footer() {
                     <span className="contact-text">
                       <a href="tel: 08148004490">+2348148004490 </a>
                     </span>
-                  </li>
+                  </li> */}
                 </ul>
               </div>
             </div>
@@ -104,7 +107,7 @@ export default function Footer() {
                     <Link to="#">Primary Section</Link>
                   </li>
                   <li>
-                    <Link to="#">Secondary Section</Link>
+                    <Link to="#">Islamiyya Section</Link>
                   </li>
                 </ul>
               </div>
@@ -154,26 +157,24 @@ export default function Footer() {
                           Nigerian Contacts:
                           <br />
                           <IoLocationSharp />
-                          1264 Setlite Town, Tudun Yola, Kabuga Kano
+                          Plot 1103, Setlite Town, Tudun Yola, Kabuga Kano
                         </div>
                       </li>
-                      <li>
+                      {/* <li>
                         <div>
-                          {/* Delhi
-                          <br /> */}
+                          
                           <IoLocationSharp />
                           Afforestation Road, Unguwar Jakada Dorayi Babba,Kano
                         </div>
-                      </li>
-                      <li>
+                      </li> */}
+                      {/* <li>
                         <div>
-                          {/* Delhi
-                          <br /> */}
+                         
                           <IoLocationSharp />
                           No. 11 Hablan House, Rijiyar Zaki Off Gwarzo Road,
                           Kano
                         </div>
-                      </li>
+                      </li> */}
                     </ul>
                   </div>
                 </div>
@@ -190,7 +191,7 @@ export default function Footer() {
                   <a href="#">Terms and Conditions</a>
                 </li>
                 <span>|</span>
-                <li className="legal-item">Copyright © {date} Yazid</li>
+                <li className="legal-item">Copyright © {date} Caliphate</li>
               </ul>
               <div className="footer-copyright">
                 <a

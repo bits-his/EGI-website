@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap");
 
 .home {
-  background-image: linear-gradient(5deg, #2828acc0 1%, #14352598 100%);
+  background-image: linear-gradient(5deg, #06463dc9 1%, #14352598 100%);
   width: 100%;
   height: 100vh;
   position: relative;
@@ -265,10 +265,22 @@ p {
 .offer-side {
   background-color: #f9f9f988;
 }
-
+.about-info h4{
+  font-family: dosis;
+  font-size: 28px;
+  font-weight: 600;
+  color: var(--background-color);
+}
+.about-info p {
+  font-family: "Figtree", sans-serif;
+  font-size: 18px;
+  color: var(--background-color);
+  line-height: 1.5;
+  opacity: 0.8;
+}
 /* ======================================vidSection=================================== */
 .vid-container {
-  background-image: url("../../Assets/ymastudent.jpeg");
+  background-image: url("../../Assets/caliphatestudent2.jpg");
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -283,7 +295,7 @@ p {
 }
 
 .vid-content {
-  background-image: linear-gradient(to left, #3b3bf2c8 10%, #14352598 100%);
+  background-image: linear-gradient(to left, #06463dc7 10%, #06463dc5 100%);
   width: 100%;
   height: 100vh; /* Changed to match container height */
   position: absolute;
@@ -319,9 +331,9 @@ p {
 }
 
 .vid-text h2 {
-  font-size: 3em;
+  font-size: 2.5em;
   font-weight: 600;
-  margin: 0;
+  /* margin: 0; */
   color: var(--highlight-color);
 }
 

@@ -4,6 +4,7 @@ import { AiOutlineRead } from "react-icons/ai";
 import { FaChalkboardTeacher } from "react-icons/fa";
 import { PiStudentBold } from "react-icons/pi";
 import { MdCastForEducation } from "react-icons/md";
+import { FaComputer } from "react-icons/fa6";
 
 export default function Certificate() {
   return (
@@ -12,9 +13,9 @@ export default function Certificate() {
         <Certified
           icon={<FaChalkboardTeacher />}
           style="certificate"
-          heading="Certified Teachers"
+          heading=" Spacious Classrooms"
           time={150}
-          description="Certified teachers dedicated to fostering academic excellence and personal growth in every student"
+          description="Provide an open, comfortable learning environment with ample space for movement, interaction, and engagement, fostering focus and collaboration"
         />
         <Certified
           icon={<AiOutlineRead />}
@@ -31,10 +32,10 @@ export default function Certificate() {
           time={250}
         />
         <Certified
-          icon={<PiStudentBold />}
+          icon={<FaComputer />}
           style="certificate2"
-          heading="Certification"
-          description="Recognized certification ensuring high educational standards and a commitment to excellence in teaching and student development"
+          heading="Computer Lab"
+          description="The Computer Lab offers students access to computers and software for hands-on learning, research, and digital skill development"
           time={300}
         />
       </div>

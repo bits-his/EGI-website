@@ -1,11 +1,11 @@
 :root {
   --main-color: #333;
-  --highlight-color: #ffc722;
+  --highlight-color: #d3762a;
   --background-color: #222;
   --text-color: #fff;
   --link-color: #000;
-  --link-hover-color: #f7c51d;
-  --primary-color: #c32828;
+  --link-hover-color:  #d3762a;
+  --primary-color: #0e5349;
 }
 body {
   box-sizing: border-box;

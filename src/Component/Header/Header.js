@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./Header.css";
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import logo from "../../Assets/YMA.png";
+import logo from "../../Assets/caliphate_logo.png";
 import { BiX } from "react-icons/bi";
 import { IoMenu } from "react-icons/io5";
 import { NavLink } from "react-router-dom";

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Carousel from "react-bootstrap/Carousel";
-import photoSlider1 from "../../Assets/ymastudent.jpeg";
-import photoSlider2 from "../../Assets/ymastudent2.jpeg";
+import photoSlider1 from "../../Assets/caliphatestudent1.jpg";
+import photoSlider2 from "../../Assets/caliphatestudent2.jpg";
 import { Button } from "react-bootstrap";
 import "./home.css";
 import home from "../../Assets/student__2_-removebg-preview.png";
@@ -12,14 +12,14 @@ export default function PhotoSlider({ sectionRef }) {
       attachment: photoSlider1,
       title: "The Caliphate School Kano",
       content:
-        "aaA certified institution offering quality primary and secondary education, focused on academic excellence, character development, and holistic growth",
+        "A certified institution offering quality primary and secondary education, focused on academic excellence, character development, and holistic growth",
     },
-    // {
-    //   attachment: photoSlider2,
-    //   title: "Yazid Memorial Academy",
-    //   content:
-    //     "A certified institution offering quality primary and secondary education, focused on academic excellence, character development, and holistic growth",
-    // },
+    {
+      attachment: photoSlider2,
+      title: "The Caliphate School Kano",
+      content:
+        "A certified institution offering quality primary and secondary education, focused on academic excellence, character development, and holistic growth",
+    },
   ]);
 
   return (
