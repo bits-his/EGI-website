@@ -10,16 +10,16 @@ export default function PhotoSlider({ sectionRef }) {
   const [slider, setSlider] = useState([
     {
       attachment: photoSlider1,
-      title: "Yazid Memorial Academy",
+      title: "The Caliphate School Kano",
       content:
-        "A certified institution offering quality primary and secondary education, focused on academic excellence, character development, and holistic growth",
+        "aaA certified institution offering quality primary and secondary education, focused on academic excellence, character development, and holistic growth",
     },
-    {
-      attachment: photoSlider2,
-      title: "Yazid Memorial Academy",
-      content:
-        "A certified institution offering quality primary and secondary education, focused on academic excellence, character development, and holistic growth",
-    },
+    // {
+    //   attachment: photoSlider2,
+    //   title: "Yazid Memorial Academy",
+    //   content:
+    //     "A certified institution offering quality primary and secondary education, focused on academic excellence, character development, and holistic growth",
+    // },
   ]);
 
   return (
@@ -39,7 +39,7 @@ export default function PhotoSlider({ sectionRef }) {
               >
                 <div className="home">
                   <div className="home-text">
-                    <h1 data-aos="fade-right">Yazid Memorial Academy</h1>
+                    <h1 data-aos="fade-right">The Caliphate School Kano</h1>
                     <p className="text-center" data-aos="fade-left">
                       {slide.content}
                     </p>
