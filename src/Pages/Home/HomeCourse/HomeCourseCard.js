@@ -48,7 +48,14 @@ export default function HomeCourseCard({
               <span>₦135</span>
             </div> */}
           </div>
-          <button>Apply Now</button>
+          <a
+            href="https://app.thecaliphate.elscholar.ng/application-form"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button>Apply Now</button>
+          </a>
+          {/* <button>Apply Now</button> */}
         </div>
       </div>
     </div>

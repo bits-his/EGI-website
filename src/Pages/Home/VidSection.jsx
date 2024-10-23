@@ -84,7 +84,13 @@ export default function VidSection({ sectionRef }) {
                 education, focused on academic excellence, character
                 development, and holistic growth
               </p>
-              <button className="register">Apply Now</button>
+              <a
+                href="https://app.thecaliphate.elscholar.ng/application-form"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <button className="register">Apply Now</button>
+              </a>
             </div>
           </div>
 

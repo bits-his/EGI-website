@@ -48,7 +48,7 @@ export default function PhotoSlider({ sectionRef }) {
                       data-aos="fade-up"
                     >
                       <a
-                        href="https://app.yma.elscholar.ng/application-form"
+                        href="https://app.thecaliphate.elscholar.ng/application-form"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
@@ -57,7 +57,7 @@ export default function PhotoSlider({ sectionRef }) {
                         </div>
                       </a>
                       <a
-                        href="https://app.yma.elscholar.ng/login"
+                        href=" https://app.thecaliphate.elscholar.ng/login"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
