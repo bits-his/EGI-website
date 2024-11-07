@@ -1,23 +1,18 @@
 import React from "react";
 import PhotoSlider from "./PhotoSlider";
 import "./home.css";
-import HomeCourse from "./HomeCourse/HomeCourse";
-import Certified from "./Certificate.jsx/Certified";
-import Certificate from "./Certificate.jsx/Certificate";
-import Offer from "./Offer";
-import VidSection from "./VidSection";
 import Contact from "./Contact";
+import Features from "./Features";
+import Teams from "./Teams";
+import Aboutus from "./Aboutus";
 
 export default function Home({ sections }) {
   return (
     <>
       <PhotoSlider sectionRef={sections.home} />
-      <Certificate />
-
-      <Offer sectionRef={sections.about} />
-
-      <HomeCourse sectionRef={sections.program} />
-      <VidSection sectionRef={sections.event} />
+      <Aboutus sectionRef={(sections.about)} />
+      <Features sectionRef={sections.features} />
+      <Teams sectionRef={sections.teams} />
       <Contact sectionRef={sections.contact} />
     </>
   );

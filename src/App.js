@@ -1,6 +1,5 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
-import AppIndex from "./AppIndex";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Nav from "./Pages/Nav";

@@ -1,12 +1,11 @@
 import React, { useEffect, useState } from "react";
 import "./Header.css";
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import logo from "../../Assets/YMA.png";
+import logo from "../../Assets/logo.png";
 import { BiX } from "react-icons/bi";
 import { IoMenu } from "react-icons/io5";
 import { NavLink } from "react-router-dom";
 import { NavDropdown } from "react-bootstrap";
-
 
 export default function Header({ sectionRefs }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -27,13 +26,13 @@ export default function Header({ sectionRefs }) {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-  console.log(activeSection)
+  console.log(activeSection);
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            console.log("hello", entry.target )
+            console.log("hello", entry.target);
             setActiveSection(entry.target.id);
           }
         });
@@ -46,69 +45,101 @@ export default function Header({ sectionRefs }) {
     // });
     Object.keys(sectionRefs).forEach((key) => {
       if (sectionRefs[key].current) {
-        console.log(sectionRefs[key].current)
+        console.log(sectionRefs[key].current);
         observer.observe(sectionRefs[key].current);
       }
     });
-
 
     return () => {
       observer.disconnect();
     };
   }, [activeSection, sectionRefs]);
 
-  const location = useLocation()
-  const navigate = useNavigate()
+  const location = useLocation();
+  const navigate = useNavigate();
   return (
     <header className={` ${isSticky ? "isSticky" : "header-main"}`}>
       <div className="menu-block">
         <div className="header-logo">
           <Link to="/" className="inner" title="Logo">
             <img src={logo} alt="logo" />
-            <h4>Y M A</h4>
           </Link>
         </div>
         <nav className="nav-links">
           <ul
-            className={`navigation ${isOpen ? "open" : ""} ${isSticky ? "whitelink" : ""
-              }`}
+            className={`navigation ${isOpen ? "open" : ""} ${
+              isSticky ? "whitelink" : ""
+            }`}
           >
-            <li onClick={
-              location.pathname === "/" ? null : () => navigate("/#home") 
-            }>
-              <a href="#home" className={activeSection === 'home' ? 'active' : ''}>
+            <li
+              onClick={
+                location.pathname === "/" ? null : () => navigate("/#home")
+              }
+            >
+              <a
+                href="#home"
+                className={activeSection === "home" ? "active" : ""}
+              >
                 Home
               </a>
             </li>
-            <li onClick={
-              location.pathname === "/blog#about" ? null : () => navigate("/#about")
-            }>
-              <a href="#about" className={activeSection === 'about' ? 'active' : ''}>
+            <li
+              onClick={
+                location.pathname === "/blog#about"
+                  ? null
+                  : () => navigate("/#about")
+              }
+            >
+              <a
+                href="#about"
+                className={activeSection === "about" ? "active" : ""}
+              >
                 About
               </a>
             </li>
-            <li onClick={
-              location.pathname === "/blog#program" ? null : () => navigate("/#program")
-            }>
-              <a href="#program" className={activeSection === 'program' ? 'active' : ''}>
-                Program
-              </a>
-            </li>
-            <li onClick={
-              location.pathname === "/blog#event" ? null : () => navigate("/#event")
-            }>
-              <a href="#event" className={activeSection === 'event' ? 'active' : ''}>
-              Event
-              </a>
-            </li>
-            <li onClick={
-              location.pathname === "/blog#program" ? null : () => navigate("/#contact")
-            }>
-              <a href="#contact" className={activeSection === 'contact' ? 'active' : ''}>
-                Contact
+            <li
+              onClick={
+                location.pathname === "/blog#features"
+                  ? null
+                  : () => navigate("/#features")
+              }
+            >
+              <a
+                href="#features"
+                className={activeSection === "features" ? "active" : ""}
+              >
+                Features
               </a>
             </li>
 
+            <li
+              onClick={
+                location.pathname === "/blog#team"
+                  ? null
+                  : () => navigate("/#teams")
+              }
+            >
+              <a
+                href="#teams"
+                className={activeSection === "teams" ? "active" : ""}
+              >
+                Team
+              </a>
+            </li>
+            <li
+              onClick={
+                location.pathname === "/blog#program"
+                  ? null
+                  : () => navigate("/#contact")
+              }
+            >
+              <a
+                href="#contact"
+                className={activeSection === "contact" ? "active" : ""}
+              >
+                Contact
+              </a>
+            </li>
             {/* <li>
               <NavLink to="/c" title="Blog">
                 Blog

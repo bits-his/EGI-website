@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
 
 .footer-container {
-  background-color: var(--primary-color);
+  background-color: #083964;
   color: var(--text-color);
   padding: 20px;
   bottom: 0;
@@ -45,7 +45,7 @@
   margin-right: 10px;
   font-size: 19px;
 }
-.footer-links-heading h2 {
+.footer-linktitle-heading h2 {
   font-size: 22px;
   margin-bottom: 20px;
 }
@@ -128,7 +128,7 @@
 }
 .footer-copyright h2 {
   font-size: 16px;
-   @media (max-width: 540px) {
+  @media (max-width: 540px) {
     font-size: 14px;
   }
 }

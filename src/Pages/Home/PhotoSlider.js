@@ -1,22 +1,26 @@
 import React, { useState } from "react";
 import Carousel from "react-bootstrap/Carousel";
-import photoSlider1 from "../../Assets/ymastudent.jpeg";
-import photoSlider2 from "../../Assets/ymastudent2.jpeg";
+import photoSlider2 from "../../Assets/bg4.jpg";
+import photoSlider3 from "../../Assets/bg3.jpg";
 import { Button } from "react-bootstrap";
 import "./home.css";
-import home from "../../Assets/student__2_-removebg-preview.png";
-
 export default function PhotoSlider({ sectionRef }) {
   const [slider, setSlider] = useState([
+    // {
+    //   attachment: photoSlider1,
+    //   title: "Elite Academic Tech",
+    //   content:
+    //     "A certified institution offering quality primary and secondary education, focused on academic excellence, character development, and holistic growth",
+    // },
     {
-      attachment: photoSlider1,
-      title: "Yazid Memorial Academy",
+      attachment: photoSlider2,
+      title: "Elite Academic Tech",
       content:
         "A certified institution offering quality primary and secondary education, focused on academic excellence, character development, and holistic growth",
     },
     {
-      attachment: photoSlider2,
-      title: "Yazid Memorial Academy",
+      attachment: photoSlider3,
+      title: "Elite Academic Tech",
       content:
         "A certified institution offering quality primary and secondary education, focused on academic excellence, character development, and holistic growth",
     },
@@ -30,6 +34,8 @@ export default function PhotoSlider({ sectionRef }) {
           controls={false}
           indicators={false}
           interval={2000}
+          slide={false}
+          fade={true}
         >
           {slider?.map((slide, index) => (
             <Carousel.Item key={index}>
@@ -37,9 +43,11 @@ export default function PhotoSlider({ sectionRef }) {
                 className="hero"
                 style={{ backgroundImage: `url(${slide.attachment})` }}
               >
+                <div className="blur-circle1"></div>
+                <div className="blur-circle2"></div>
                 <div className="home">
                   <div className="home-text">
-                    <h1 data-aos="fade-right">Yazid Memorial Academy</h1>
+                    <h1 data-aos="fade-right">{slide.title}</h1>
                     <p className="text-center" data-aos="fade-left">
                       {slide.content}
                     </p>
@@ -48,23 +56,12 @@ export default function PhotoSlider({ sectionRef }) {
                       data-aos="fade-up"
                     >
                       <a
-                        href="https://app.yma.elscholar.ng/application-form"
-                        target="_blank"
+                        href="#features"
+                        // target="_blank"
                         rel="noopener noreferrer"
                       >
                         <div className="login">
-                          <button className="register">Application</button>
-                        </div>
-                      </a>
-                      <a
-                        href="https://app.yma.elscholar.ng/login"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <div className="login">
-                          <button className="register">
-                            Returning Student
-                          </button>
+                          <button className="register">Learn More</button>
                         </div>
                       </a>
                     </div>

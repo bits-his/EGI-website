@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
 
 .home {
-  background-image: linear-gradient(5deg, #2828acc0 1%, #14352598 100%);
+  background-image: linear-gradient(5deg, #11118bc0 1%, #14352598 100%);
   width: 100%;
   height: 100vh;
   position: relative;
@@ -11,7 +12,7 @@
 }
 
 .hero {
-  height: 90vh;
+  height: 100vh;
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -19,6 +20,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 .home-text {
@@ -41,7 +43,26 @@
   max-width: 80%;
   margin-inline: auto;
 }
-
+.title-heading {
+  display: inline-block;
+  padding: 5px 20px;
+  color: var(--highlight-color);
+  text-transform: uppercase;
+  background-color: #0d6fc538;
+  border-radius: 30px;
+  font-size: 10px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: "Open Sans", sans-serif;
+  margin-top: 150px;
+}
+.subheading {
+  font-weight: bold;
+  font-family: "Dosis", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  color: #000000ad;
+}
 @media screen and (max-width: 570px) {
   .home-text p {
     font-size: 13px;
@@ -75,7 +96,7 @@
 .blur-circle2 {
   width: 200px;
   height: 200px;
-  background: linear-gradient(to bottom, white, pink);
+  background: linear-gradient(to bottom, white, white);
   border-radius: 50%;
   filter: blur(100px);
   position: absolute;
@@ -86,105 +107,214 @@
 body {
   font-family: "Open Sans", sans-serif;
 }
-.containered {
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
+/* ========================================FEATURES============================== */
+.feature-card {
+  height: 450px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  background-color: var(--highlight-color);
+  border-radius: 20px;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  overflow: hidden;
 }
-/* Small */
-@media (min-width: 768px) {
-  .containered {
-    width: 750px;
-  }
-  .landing-page .content .info h1 {
-    font-size: 2em;
-  }
-}
-/* Medium */
-@media (min-width: 992px) {
-  .containered {
-    width: 980px;
-  }
-  .landing-page .content .info h1 {
-    font-size: 2em;
-  }
-}
-/* Large */
-@media (min-width: 1200px) {
-  .containered {
-    width: 1170px;
-  }
-}
-/* End Global Rules */
 
-.landing-page .content .containered {
+.feature-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.8) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transition: opacity 0.3s ease-in-out;
+  opacity: 0;
+  border-radius: 20px;
+  z-index: 0;
+}
+
+.feature-card:hover::before {
+  opacity: 1;
+}
+
+.feature-card:hover h5 + p {
+  color: var(--link-color) !important;
+  z-index: 1;
+}
+
+.feature-card * {
+  position: relative;
+  z-index: 1;
+}
+
+.feature-text h4 {
+  font-weight: 600;
+  color: var(--text-color);
+}
+
+.feature-text p {
+  color: var(--text-color);
+}
+
+.feature-icon {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.feature-icon svg {
+  width: 50%;
+  height: 50%;
+  margin: auto;
+  fill: var(--highlight-color);
+}
+.feature-text h4 {
+  font-weight: 600;
+  color: var(--text-color);
+  /* margin-top: 50px; */
+}
+.feature-text p {
+  color: var(--text-color);
+}
+/* ===================================TEAMS=========================================== */
+/* .team {
+  position: relative;
+  width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 140px;
-  min-height: calc(100vh - 80px);
+  justify-content: center;
+  flex-direction: column;
 }
-@media (max-width: 767px) {
-  .landing-page .content .containered {
-    gap: 0;
-    min-height: calc(100vh - 101px);
-    justify-content: center;
-    flex-direction: column;
-  }
-  .main-image {
-    /* mix-blend-mode:exclusion */
-    width: 600px;
-    height: 400px;
-    /* visibility: hidden;
-   */
-    /* display: none; */
-  }
-  .landing-page .content .info {
-    text-align: center;
-    margin-top: 100px;
-    margin-bottom: 15px;
-  }
-  .landing-page .content .info h1 {
-    color: #bbbbbb;
-    font-size: 4em;
-    font-weight: 600;
-  }
+.team-content {
+  width: 100%;
+  max-width: 1350px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, auto));
+  align-items: center;
+  gap: 2rem;
+  text-align: center;
+  margin-top: 4rem;
+}
+.team-content img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  margin-bottom: 15px;
+} */
+.center h1 {
+  color: #fff;
+  font-size: 4rem;
+  text-align: center;
+}
+.box {
+  padding: 16px;
+  background: var(--highlight-color);
+  border-radius: 15px;
+  transition: all 0.38s ease;
+  height: 600px;
+  margin-bottom: 30px;
+}
+.box div {
+  width: 100%;
+  height: 80%;
+}
+.box div img {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+.box h3 {
+  font-size: 23px;
+  font-weight: 600;
+  color: #fff;
+  margin-block: 8px;
+  text-align: center;
+}
+.box h5 {
+  font-size: 15px;
+  font-weight: 600;
+  color: #ffffff9a;
+  margin-bottom: 15px;
+  text-align: center;
+  letter-spacing: 2px;
+}
+.icons {
+  display: flex;
+  justify-content: center;
+}
+.icons svg {
+  display: inline-block;
+  color: #fff;
+  font-size: 20px;
+  margin: 0 8px;
+  transition: all 0.38s ease;
+}
+.icons svg:hover {
+  transform: scale(1.2);
+}
+.box:hover {
+  transform: translateY(-10px);
+  cursor: pointer;
 }
 
-.landing-page .content .info h1 {
-  color: #bbbbbb;
-  font-size: 4em;
+@media (max-width: 1240px) {
+  .team {
+    width: 100%;
+    height: auto;
+    padding: 90px 2%;
+  }
+  .center h1 {
+    font-size: 3.2rem;
+  }
+}
+/* ===========================================ABOUT US============================================ */
+.about p {
+  font-size: 21px;
+  font-weight: 500;
+  color: var(--background-color);
+  font-family: "Figtree", sans-serif;
+  /* max-width: 90%; */
+  opacity: 0.8;
+  text-align: justify;
+  @media (width < 546px) {
+    font-size: 18px;
+  }
+}
+/* ========================================SERVICES============================================= */
+.section-tittle span {
+  font-family: "Josefin Sans", sans-serif;
+  color: var(--highlight-color);
+  font-size: 16px;
   font-weight: 600;
+  line-height: 1;
+  margin-bottom: 19px;
+  display: block;
+  text-transform: capitalize;
+  letter-spacing: 1;
+  /* margin-top: 50px; */
 }
-.landing-page .content .info p {
-  margin: 0;
-  line-height: 1.6;
-  font-size: 1.4em;
-  color: #b3b3b3;
+
+.section-tittle h2 {
+  font-family: "Josefin Sans", sans-serif;
+  color: #232f55;
+  font-size: 46px;
+  display: block;
+  font-weight: 600;
+  margin-bottom: 17px;
 }
-.landing-page .content .info button {
-  border: 0;
-  border-radius: 20px;
-  padding: 12px 30px;
-  margin-top: 30px;
-  cursor: pointer;
-  color: var(--text-color);
-  background-color: #6c63ff;
-}
-.landing-page .content .image img {
-  max-width: 100%;
-}
-/* End Landing Page */
-.main-image {
-  /* mix-blend-mode:exclusion */
-  width: 600px;
-  height: 400px;
-}
-h1,
-p {
-  color: var(--text-color);
-}
+
 /* ==============================================OFFER===================================================== */
 .offer {
   display: flex;
@@ -268,7 +398,7 @@ p {
 
 /* ======================================vidSection=================================== */
 .vid-container {
-  background-image: url("../../Assets/ymastudent.jpeg");
+  /* background-image: url("../../Assets/ymastudent.jpeg"); */
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
