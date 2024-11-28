@@ -1,6 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+p {
+  font-family: "Poppins", sans-serif;
+}
 .home {
   background-image: linear-gradient(5deg, #11118bc0 1%, #14352598 100%);
   width: 100%;
@@ -58,7 +66,7 @@
 }
 .subheading {
   font-weight: bold;
-  font-family: "Dosis", sans-serif;
+  font-family: Figtree;
   font-weight: 700;
   font-size: 40px;
   color: #000000ad;
@@ -331,7 +339,7 @@ body {
   font-size: 33px;
   font-weight: 600;
   color: var(--background-color);
-  font-family: dosis;
+  font-family: "Poppins", sans-serif;
   /* text-align: center; */
 }
 .offer p {
@@ -372,7 +380,7 @@ body {
   width: 60%;
 }
 .offer-icon-section .offer-icon-desc p {
-  font-family: dosis;
+  font-family: "Poppins", sans-serif;
   font-size: 19px;
   /* opacity: 0.7; */
   text-align: left;
@@ -383,7 +391,7 @@ body {
 }
 
 .offer-icon-section .offer-icon-desc h2 {
-  font-family: dosis;
+  font-family: "Poppins", sans-serif;
   font-size: 28px;
   font-weight: 600;
   opacity: 0.8;

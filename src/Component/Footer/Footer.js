@@ -20,9 +20,9 @@ export default function Footer() {
               </div>
               <div className="footer-description">
                 <p>
-                  Yazid Academy is dedicated to providing quality education and
-                  fostering holistic development in students, preparing them for
-                  future success
+                  A certified institution offering quality primary and secondary
+                  education, focused on academic excellence, character
+                  development, and holistic growth
                 </p>
               </div>
               <div className="footer-contact">
@@ -32,8 +32,8 @@ export default function Footer() {
                       <HiOutlineMailOpen />
                     </span>
                     <span className="contact-text">
-                      <a href="mailto:info@yma.elscholar.ng" className="">
-                        info@yma.elscholar.ng
+                      <a href="mailto:info@elscholar.ng" className="">
+                        info@elscholar.ng
                       </a>
                     </span>
                   </li>
@@ -42,23 +42,7 @@ export default function Footer() {
                       <LiaPhoneVolumeSolid />
                     </span>
                     <span className="contact-text">
-                      <a href="tel: 08037871418">+2348037871418 </a>
-                    </span>
-                  </li>
-                  <li className="contact-item">
-                    <span className="contact-icon">
-                      <LiaPhoneVolumeSolid />
-                    </span>
-                    <span className="contact-text">
-                      <a href="tel: 08065531596">+2348065531596 </a>
-                    </span>
-                  </li>
-                  <li className="contact-item">
-                    <span className="contact-icon">
-                      <LiaPhoneVolumeSolid />
-                    </span>
-                    <span className="contact-text">
-                      <a href="tel: 08148004490">+2348148004490 </a>
+                      <a href="tel: 0703 538 4184">+234 703 538 4184 </a>
                     </span>
                   </li>
                 </ul>
@@ -69,21 +53,22 @@ export default function Footer() {
                 <div className="footer-links-heading">
                   <h2>Quick Links</h2>
                 </div>
-                <ul className="links-list">
+                <ul className="service-list">
                   <li>
-                    <Link to="/"> About Us</Link>
+                    <a href="/">Home</a>
                   </li>
                   <li>
-                    <Link to="/">Event</Link>
+                    <a href="#about">About Us</a>
+                  </li>
+
+                  <li>
+                    <a href="#features">Features</a>
                   </li>
                   <li>
-                    <Link to="/">Blog </Link>
+                    <a href="#teams">Teams</a>
                   </li>
                   <li>
-                    <Link to="/">Courses</Link>
-                  </li>
-                  <li>
-                    <Link to="/">Contact</Link>
+                    <a href="#contact">Contact</a>
                   </li>
                 </ul>
               </div>
@@ -91,20 +76,23 @@ export default function Footer() {
             <div className="col-6 col-sm-6 col-md-4 ps-sm-5 mb-5 col-lg-3 mt-xl-5 col-xl-2">
               <div className="footer-services">
                 <div className="footer-links-heading">
-                  <h2>Programs</h2>
+                  <h2>Features</h2>
                 </div>
-                <ul className="service-list">
+                <ul className="links-list">
                   <li>
-                    <Link to="#">Pre Nursery Section</Link>
+                    <a href="#">User-Friendly Interface</a>
                   </li>
                   <li>
-                    <Link to="#">Nursery Section</Link>
+                    <a href="#">Course Management</a>
                   </li>
                   <li>
-                    <Link to="#">Primary Section</Link>
+                    <a href="#">Mobile Accessibility</a>
                   </li>
                   <li>
-                    <Link to="#">Secondary Section</Link>
+                    <a href="#">Gamification</a>
+                  </li>
+                  <li>
+                    <a href="#">Collaboration Tools</a>
                   </li>
                 </ul>
               </div>
@@ -154,24 +142,8 @@ export default function Footer() {
                           Nigerian Contacts:
                           <br />
                           <IoLocationSharp />
-                          1264 Setlite Town, Tudun Yola, Kabuga Kano
-                        </div>
-                      </li>
-                      <li>
-                        <div>
-                          {/* Delhi
-                          <br /> */}
-                          <IoLocationSharp />
-                          Afforestation Road, Unguwar Jakada Dorayi Babba,Kano
-                        </div>
-                      </li>
-                      <li>
-                        <div>
-                          {/* Delhi
-                          <br /> */}
-                          <IoLocationSharp />
-                          No. 11 Hablan House, Rijiyar Zaki Off Gwarzo Road,
-                          Kano
+                          Floor 1, African Alliance Building 1 Sani Abacha Way
+                          Fagge, Road, Airport, Kano 700213
                         </div>
                       </li>
                     </ul>
@@ -190,16 +162,18 @@ export default function Footer() {
                   <a href="#">Terms and Conditions</a>
                 </li>
                 <span>|</span>
-                <li className="legal-item">Copyright © {date} Yazid</li>
+                <li className="legal-item">
+                  Copyright © {date} Elite Academic Tech
+                </li>
               </ul>
-              <div className="footer-copyright">
+              {/* <div className="footer-copyright">
                 <a
                   href="http://elscholar.ng"
                   className="text-light text-decoration-none"
                 >
                   <h2>Powered by Elite Academic Tech</h2>
                 </a>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
